@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#191A1D"/>
+      <stop offset="50%" stop-color="#121316"/>
+      <stop offset="100%" stop-color="#0A0B0D"/>
+    </linearGradient>
+    <radialGradient id="aura" cx="50%" cy="45%" r="60%">
+      <stop offset="0%" stop-color="#FF6A2A" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#FF6A2A" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="metal" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2D3039"/>
+      <stop offset="50%" stop-color="#4B505F"/>
+      <stop offset="100%" stop-color="#2D3039"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="800" height="500" rx="20" fill="url(#bgGrad)"/>
+  <rect width="800" height="500" rx="20" fill="url(#aura)"/>
+  
+  <!-- Architectural Outer Hairline -->
+  <rect x="24" y="24" width="752" height="452" rx="14" fill="none" stroke="#FF6A2A" stroke-opacity="0.3" stroke-width="1.5"/>
+  <rect x="36" y="36" width="728" height="428" rx="10" fill="none" stroke="#F4F0E8" stroke-opacity="0.08" stroke-width="1"/>
+
+  <!-- Top Brand Watermark -->
+  <text x="50" y="65" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="700" fill="#FF6A2A" letter-spacing="3">FORKFRAME STUDIO · CONTACT</text>
+  <text x="750" y="65" text-anchor="end" font-family="'JetBrains Mono', monospace" font-size="11" fill="#A7A39B" opacity="0.8">SPEC-09</text>
+
+  <!-- Central Visual Display Card -->
+  <rect x="70" y="95" width="660" height="310" rx="12" fill="#141519" stroke="#ffffff" stroke-opacity="0.08" stroke-width="1.5"/>
+  
+  <!-- Mockup UI Header Bar -->
+  <rect x="70" y="95" width="660" height="36" rx="12" fill="#1C1E24"/>
+  <circle cx="95" cy="113" r="5" fill="#EF4444" opacity="0.8"/>
+  <circle cx="112" cy="113" r="5" fill="#F59E0B" opacity="0.8"/>
+  <circle cx="129" cy="113" r="5" fill="#10B981" opacity="0.8"/>
+  <rect x="220" y="103" width="360" height="20" rx="6" fill="#121316"/>
+  <text x="400" y="117" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="10" fill="#A7A39B">forkframe.studio/contact/09_secure_nda_confidentiality</text>
+
+  <!-- Central Graphic Subject -->
+  <circle cx="400" cy="245" r="75" fill="#FF6A2A" fill-opacity="0.12" stroke="#FF6A2A" stroke-opacity="0.4" stroke-width="2"/>
+  <circle cx="400" cy="245" r="55" fill="none" stroke="#F4F0E8" stroke-opacity="0.2" stroke-dasharray="6,4" stroke-width="1.5"/>
+  <text x="400" y="260" text-anchor="middle" font-size="44">📜</text>
+
+  <!-- Decorative Architectural Grid Lines -->
+  <line x1="120" y1="245" x2="300" y2="245" stroke="#FF6A2A" stroke-opacity="0.3" stroke-width="1"/>
+  <line x1="500" y1="245" x2="680" y2="245" stroke="#FF6A2A" stroke-opacity="0.3" stroke-width="1"/>
+  <circle cx="300" cy="245" r="3" fill="#FF6A2A"/>
+  <circle cx="500" cy="245" r="3" fill="#FF6A2A"/>
+
+  <!-- Bottom Title Plate -->
+  <rect x="100" y="340" width="600" height="50" rx="8" fill="#101113" fill-opacity="0.9" stroke="#FF6A2A" stroke-opacity="0.25"/>
+  <text x="400" y="371" text-anchor="middle" font-family="'Outfit', sans-serif" font-size="17" font-weight="700" fill="#F4F0E8" letter-spacing="0.5">UK NDA & Recipe Confidentiality Standard</text>
+
+  <!-- Bottom Status Footer -->
+  <text x="50" y="445" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" fill="#A7A39B">High-Fidelity Hospitality Visual Asset</text>
+  <text x="750" y="445" text-anchor="end" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="600" fill="#FF6A2A">VERIFIED UK PRODUCTION</text>
+</svg>

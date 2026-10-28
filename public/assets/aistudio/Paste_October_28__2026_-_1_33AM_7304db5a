@@ -1,0 +1,1359 @@
+# FORKFRAME STUDIO
+
+# THE INFINITE DIMENSION
+
+## THE ULTIMATE ZERO-TO-HERO BUILD DIRECTIVE
+
+### A Bespoke, Cinematic, Fully Interactive 3D Digital Universe and Production-Ready Business Platform
+
+---
+
+# 00 — THE MISSION
+
+Build **FORKFRAME STUDIO — THE INFINITE DIMENSION** from absolute zero.
+
+This is a complete greenfield creation. Start with an empty project, establish the architecture, create the visual identity, engineer the 3D experience, implement the business application, connect the backend, validate every critical interaction, and deliver a coherent, functioning product.
+
+There is no pre-existing application to depend on. Nothing should be assumed to exist until it has actually been created and verified.
+
+The objective is to create a bespoke digital experience in which visitors physically feel as though they are entering, travelling through, and exploring a sophisticated three-dimensional creative technology studio.
+
+**The 3D world is the product's primary interface. The website's business functionality is the working system inside that world. Both are essential.**
+
+This is not a conventional agency website with a 3D background.
+
+It is not a collection of generic landing pages.
+
+It is not a decorative WebGL experiment.
+
+It is not a static prototype.
+
+It is not a collection of beautiful but disconnected scenes.
+
+It is a unified, interactive, navigable, responsive, secure, and commercially useful digital environment.
+
+The final experience must unite four disciplines:
+
+1. **Cinematic immersion:** exceptional visual composition, three-dimensional architecture, spatial depth, controlled camera choreography, material quality, lighting, and sound.
+2. **Interactive exploration:** genuine object interaction, intuitive spatial navigation, destination-specific environments, and reliable movement through the digital world.
+3. **Functional products:** working business calculators, creative editing tools, services, portfolio experiences, content, and project enquiries.
+4. **Professional engineering:** maintainable architecture, reliable state management, secure backend functionality, responsive performance, accessibility, and verifiable quality.
+
+Every major decision must serve these four disciplines.
+
+Do not optimise for the appearance of progress. Optimise for a finished, coherent experience that can be demonstrated, used, tested, and developed further.
+
+---
+
+# 01 — THE NON-NEGOTIABLE QUALITY CONTRACT
+
+The following requirements take precedence over convenience, implementation shortcuts, and superficial completion.
+
+## 1.1 Build a real 3D experience
+
+The three-dimensional environment must occupy a meaningful, central role in the user journey.
+
+The visitor must be able to perceive:
+
+* Physical scale.
+* Depth.
+* Perspective.
+* Spatial relationships.
+* Camera movement.
+* Material differences.
+* Environmental lighting.
+* Genuine object interaction.
+* A sense of travelling between distinct places.
+
+A background animation behind ordinary website sections does not satisfy this requirement.
+
+## 1.2 Build real functionality
+
+Every prominent control must perform its advertised action.
+
+Every calculator must produce correct results.
+
+Every download must generate a genuine downloadable file.
+
+Every editable canvas must permit actual editing.
+
+Every enquiry must follow a real submission and persistence process.
+
+Every protected administration route must enforce authentication and authorisation on the server.
+
+Never use a visual placeholder to represent a completed feature.
+
+## 1.3 Enforce distinct environments
+
+Each major destination must have a recognisable, independently art-directed identity.
+
+Reusing rendering infrastructure is good engineering. Reusing the same scene design, camera animation, lighting arrangement, tunnel, and floating-object composition for every destination is not acceptable.
+
+A destination is not complete simply because its heading and content have changed.
+
+## 1.4 Prioritise quality over feature count
+
+When time or execution resources become constrained, reduce secondary scope before reducing the quality of the essential experience.
+
+Deliver a complete, polished journey before attempting to create numerous unfinished environments.
+
+Do not create ten mediocre scenes when three excellent, fully functional scenes would provide a stronger foundation for the complete system.
+
+## 1.5 Never misrepresent progress
+
+Distinguish clearly between work that is:
+
+* Designed.
+* Implemented.
+* Tested.
+* Verified.
+* Blocked.
+* Not yet implemented.
+
+A successful build does not prove that an interaction works.
+
+A rendered scene does not prove that navigation works.
+
+A database record does not prove that an email was delivered.
+
+A screenshot does not prove that an editor can export an image.
+
+All completion claims must be supported by appropriate evidence.
+
+---
+
+# 02 — BRAND AND COMMERCIAL IDENTITY
+
+## 2.1 Brand definition
+
+**Brand:** Forkframe Studio
+
+**Product identity:** The Infinite Dimension
+
+**Market:** United Kingdom initially.
+
+**Primary audience:** Independent restaurants, takeaways, cafés, food entrepreneurs, hospitality businesses, and food brands.
+
+**Commercial purpose:** Introduce the studio's services, demonstrate its digital capabilities, provide useful business tools, generate qualified project enquiries, and establish a distinctive digital identity.
+
+Forkframe Studio should feel like a creative technology partner that understands real business needs, not a generic agency selling interchangeable websites.
+
+## 2.2 Services to represent
+
+The experience must communicate the following services accurately:
+
+1. Free initial guidance for food businesses.
+2. Website management.
+3. Bespoke website design and development.
+4. Digital menu design as a paid service.
+5. Menu printing services or coordinated printing enquiries.
+6. Food-business applications and digital tools.
+7. Social promotion and creative production through Social Studio.
+
+Do not imply that every service is free.
+
+Do not invent service prices, guaranteed results, client numbers, testimonials, awards, or case studies.
+
+Where commercial scope and prices depend on a customer's requirements, invite them to request a quote.
+
+## 2.3 Brand palette
+
+Establish a disciplined design system using the following foundation:
+
+* Obsidian: `#101113`
+* Deep Graphite: `#191A1D`
+* Warm Ivory: `#F4F0E8`
+* Champagne: `#C8A879`
+* Ember Orange: `#FF6A2A`
+* Muted Stone: `#A7A39B`
+
+Use colour intentionally.
+
+Obsidian and graphite establish depth. Warm ivory provides readability. Champagne introduces premium detailing. Ember orange draws attention to selected actions and moments of energy. Muted stone supports secondary information.
+
+Avoid excessive neon, indiscriminate gradients, generic purple AI aesthetics, and visual noise.
+
+## 2.4 Logo and typography
+
+Use the official Forkframe Studio logo if it is supplied during the build. If it is unavailable, create a restrained temporary wordmark that can be replaced without structural changes.
+
+Do not fabricate an official logo.
+
+Choose a sophisticated display typeface and a highly readable body typeface. Consider Space Grotesk or Sora with Inter or Manrope, using legal and reliable font delivery.
+
+Use typography as part of the spatial composition. Oversized typography may become an architectural feature, but it must remain readable and must not interfere with interaction.
+
+---
+
+# 03 — FIRST PRINCIPLE: DESIGN THE EXPERIENCE BEFORE DECORATING IT
+
+Before constructing the world, establish its spatial logic.
+
+Create a concise design specification describing:
+
+* The opening environment.
+* The entry mechanism.
+* The transition system.
+* The central navigation hub.
+* The destinations.
+* The visual language of each destination.
+* The relationship between 3D navigation and readable content.
+* The desktop and mobile experience.
+* The accessibility fallback.
+* The application architecture.
+
+Do not spend an excessive amount of time writing documentation. This specification exists to prevent contradictory design decisions and repetitive environments.
+
+## 3.1 Define a spatial grammar
+
+The world must have consistent underlying rules.
+
+Define:
+
+* Coordinate conventions.
+* Camera orientation.
+* Scene scale.
+* Destination anchor positions.
+* Navigation interaction rules.
+* Transition timing.
+* Lighting conventions.
+* Object selection behaviour.
+* Focus and selection feedback.
+* Scene loading and unloading.
+* Return navigation.
+* Error recovery.
+
+The spatial grammar must make the universe feel like one coherent product, while permitting each destination to have a unique architectural identity.
+
+## 3.2 Create a destination registry
+
+Represent each destination through structured configuration rather than scattering destination-specific conditions throughout the code.
+
+Each destination configuration should identify:
+
+* Unique identifier.
+* Display name.
+* Purpose.
+* Route.
+* Scene component.
+* Spatial position.
+* Visual theme.
+* Materials and lighting profile.
+* Entry camera position.
+* Arrival choreography.
+* Transition profile.
+* Interaction rules.
+* Loading requirements.
+* Accessibility description.
+* Return behaviour.
+
+This registry must be the authoritative source for navigation and destination metadata.
+
+Do not create separate, inconsistent navigation systems for different parts of the application.
+
+---
+
+# 04 — THE CINEMATIC ENTRY: THE FIRST FIVE SECONDS
+
+The first impression must immediately establish that this is not an ordinary website.
+
+## 4.1 The environment
+
+Create a carefully composed, believable three-dimensional creative workspace.
+
+The opening environment should feature a premium desk and a physical-looking laptop as its primary focal point.
+
+Supporting details may include:
+
+* Sculptural desk geometry.
+* Restrained metallic elements.
+* A controlled pool of warm light.
+* Soft environmental illumination.
+* Carefully placed studio objects.
+* Subtle shadows and reflections.
+* A layered background with genuine depth.
+* Small ambient movements that make the space feel alive.
+
+Every object must justify its presence through composition, storytelling, material quality, or interaction.
+
+Do not fill the environment with random floating objects merely to make it look complex.
+
+## 4.2 The opening message
+
+Present an original, visually striking statement.
+
+Suggested direction:
+
+**WHAT IF YOUR NEXT IDEA HAD ITS OWN WORLD?**
+
+Supporting copy:
+
+*Explore a digital studio built to help food businesses transform ideas into useful digital experiences.*
+
+Primary action:
+
+**STEP INSIDE**
+
+The message must be concise and readable. The entry action must be obvious.
+
+## 4.3 The laptop must be interactive
+
+The laptop is the physical gateway into the digital universe.
+
+When activated:
+
+1. The laptop responds to selection.
+2. Its screen illuminates.
+3. A controlled reflection or lighting change affects nearby surfaces.
+4. The screen reveals a deliberate visual sequence.
+5. The camera aligns with the screen.
+6. The camera moves toward it with controlled acceleration.
+7. The screen becomes a spatial portal.
+8. The camera passes through the screen plane.
+9. The environment transitions into the digital universe.
+
+Use actual 3D geometry and camera movement.
+
+Do not replace the entire journey with a flat video or a CSS scaling effect.
+
+A restrained screen shader or compositing effect may enhance the sequence, but the underlying movement must remain spatially convincing.
+
+## 4.4 Entry behaviour
+
+Support:
+
+* Mouse interaction.
+* Trackpad interaction.
+* Touch interaction.
+* Keyboard activation.
+* An accessible direct-entry alternative.
+
+The user must not be forced to click a tiny hotspot.
+
+Provide a skip-entry option or an appropriate reduced-motion alternative.
+
+The initial entry should feel cinematic without making repeat visits tedious.
+
+Target approximately two to four seconds for the full sequence, then tune the duration using actual testing.
+
+---
+
+# 05 — THE PORTAL ENGINE: TRAVEL, NOT ZOOM
+
+The portal is a dedicated spatial transition system.
+
+It must communicate movement through a real three-dimensional environment.
+
+## 5.1 Construct a convincing tunnel
+
+Design a distinctive travel corridor using a combination of:
+
+* Layered architectural frames.
+* Receding geometry.
+* Spatial gates.
+* Controlled light streaks.
+* Parallax structures.
+* Carefully placed particles.
+* Perspective depth.
+* Directional movement cues.
+* Destination-specific silhouettes.
+* A deliberate arrival reveal.
+
+Choose the combination that produces the strongest result without unnecessary rendering expense.
+
+Do not rely on random particle clouds to create the illusion of sophistication.
+
+## 5.2 Use an intentional motion sequence
+
+Every transition must contain a controlled sequence:
+
+1. Departure anticipation.
+2. Scene response.
+3. Acceleration.
+4. Spatial travel.
+5. Destination-specific signature.
+6. Visual approach.
+7. Deceleration.
+8. Environment reveal.
+9. Camera settling.
+10. Return of interactive controls.
+
+The default hub-to-destination journey should initially target approximately one to two seconds. Adjust according to the complexity of the destination and the user's ability to understand what is happening.
+
+The initial laptop entry can be longer.
+
+Never block input indefinitely. Every transition must have timeout handling, failure recovery, and a known final state.
+
+## 5.3 Distinct transition profiles
+
+The transition engine must accept destination-specific parameters for:
+
+* Travel duration.
+* Acceleration and easing.
+* Corridor geometry.
+* Lighting and colour.
+* Camera path.
+* Geometric density.
+* Arrival orientation.
+* Final camera position.
+* Arrival choreography.
+* Optional sound cue.
+
+Different destinations must produce perceptibly different journeys.
+
+The engine may be shared; the artistic result must not be interchangeable.
+
+---
+
+# 06 — THE ORBITAL HUB: A LIVING NAVIGATION SYSTEM
+
+The hub is the central world from which users discover and enter the destinations.
+
+It must feel like a designed spatial structure with depth, hierarchy, atmosphere, and purposeful movement.
+
+## 6.1 Composition
+
+Create a strong central architectural feature surrounded by a carefully arranged spatial system of destinations.
+
+Potential elements include:
+
+* A central core.
+* Sculptural orbital paths.
+* Floating architectural platforms.
+* Suspended destination structures.
+* Layered environmental geometry.
+* Restrained luminous details.
+* A distant horizon.
+* Subtle ambient motion.
+* Carefully controlled depth and scale.
+
+Do not create a simple ring of identical spheres.
+
+Do not position destinations as generic glowing dots.
+
+Each destination should have its own silhouette, visual symbol, and spatial character.
+
+## 6.2 Direct manipulation
+
+Implement reliable:
+
+* Mouse drag.
+* Trackpad drag where supported.
+* Touch drag.
+* Inertial rotation.
+* Damping.
+* Hover response.
+* Selection feedback.
+* Destination focus.
+* Camera framing.
+* Reset-to-default view.
+* Hub return.
+* Direct accessible navigation.
+
+Use appropriate hit testing and interaction controls.
+
+Prevent click-through errors and accidental selection during drag operations.
+
+Clamp extreme rotations and provide a natural way to recover orientation.
+
+## 6.3 Interaction rules
+
+The hub must have an explicit interaction model.
+
+* During transitions, disable conflicting scene manipulation.
+* During selection, visibly acknowledge the chosen destination.
+* During loading, communicate the state.
+* When a destination is ready, make its entry action available.
+* When a destination fails, offer recovery.
+* When returning, restore a predictable hub orientation.
+
+Do not leave the camera in an arbitrary position after every journey.
+
+## 6.4 Spatial discovery
+
+A visitor should understand what each destination offers before entering it.
+
+Show concise contextual information when a destination is selected.
+
+The information may appear as an integrated spatial annotation or a refined interface panel.
+
+Always provide a clear entry action and a way to return.
+
+The world should encourage exploration without making visitors work unnecessarily hard to find essential information.
+
+---
+
+# 07 — THE NINE DISTINCT ENVIRONMENTS
+
+Build each environment as a deliberately designed location, not as a variation of one generic scene.
+
+## DESTINATION 01 — CREATIVE FORGE
+
+**Role:** Services and capabilities.
+
+**Spatial identity:** A monumental digital workshop where ideas are assembled into practical solutions.
+
+Design language:
+
+* Modular architecture.
+* Layered structures.
+* Precision-lit surfaces.
+* Materials suggesting craft and construction.
+* Deliberate spatial alignment.
+* A strong central work surface or focal structure.
+
+The visitor should feel that they have entered a place where digital products are created.
+
+Provide interactive service exhibits for:
+
+* Free initial guidance.
+* Website management.
+* Website development.
+* Paid digital menu design.
+* Menu printing.
+* Food-business applications.
+* Social promotion and Social Studio.
+
+Selecting a service must open meaningful information and a relevant action.
+
+Do not use seven identical floating cards. Use spatially integrated exhibits, controlled reveals, and a consistent but varied composition.
+
+## DESTINATION 02 — PORTFOLIO GALAXY
+
+**Role:** Projects and demonstrations.
+
+**Spatial identity:** A carefully art-directed exhibition space where each project is a distinct installation.
+
+Design language:
+
+* Individual project compositions.
+* Varied architectural framing.
+* Carefully controlled lighting.
+* Distinct visual focal points.
+* Clear movement between exhibits.
+
+Each project must open a useful detail view.
+
+Use real work only when genuine work has been supplied. Clearly label concept demonstrations.
+
+Never invent clients, business results, testimonials, awards, or project histories.
+
+## DESTINATION 03 — SOCIAL STUDIO
+
+**Role:** Social-media creative production.
+
+**Spatial identity:** A creative production laboratory with a central editable canvas and a refined workspace surrounding it.
+
+The 3D environment provides atmosphere and context, while the editing controls must remain precise and practical.
+
+Implement a real editor supporting:
+
+* Common social-media canvas presets.
+* Custom dimensions.
+* Local image import.
+* Text creation and editing.
+* Object selection.
+* Moving and resizing.
+* Layer ordering.
+* Background selection.
+* Object deletion.
+* Undo and redo.
+* Reset with confirmation.
+* PNG export.
+* JPEG export where supported.
+
+The exported file must contain the actual design at the intended output dimensions.
+
+Process images locally whenever possible. Do not silently upload or retain customer images.
+
+If project saving is implemented, clearly identify the persistence mechanism and let users understand what is stored.
+
+Do not advertise a control unless it works.
+
+## DESTINATION 04 — PROJECT CALCULATOR
+
+**Role:** Practical planning and pricing tools.
+
+**Spatial identity:** A precision-engineered planning environment.
+
+Design language:
+
+* Architectural measuring structures.
+* Structured grids.
+* Clear spatial divisions.
+* Controlled data visualisations.
+* Minimal visual distraction.
+* A strong sense of accuracy.
+
+Implement three working tools.
+
+### Tool A: Food-cost calculator
+
+Inputs:
+
+* Ingredient name.
+* Purchase cost.
+* Purchase quantity.
+* Quantity used.
+* Optional portion count.
+* Appropriate unit information.
+
+Outputs:
+
+* Cost per unit.
+* Ingredient cost.
+* Total recipe cost where multiple ingredients are supported.
+* Cost per portion.
+
+Validate units and inputs consistently. Prevent division by zero and reject invalid negative quantities.
+
+### Tool B: Menu-pricing calculator
+
+Inputs:
+
+* Cost per portion.
+* Desired food-cost percentage.
+* Optional additional cost allowance.
+* Proposed selling price, where needed for comparison.
+
+Outputs:
+
+* Suggested selling price.
+* Estimated food-cost percentage.
+* Estimated gross contribution.
+* Clear explanation of the formulas.
+
+Use:
+
+`Suggested price = Cost per portion ÷ (Target food-cost percentage ÷ 100)`
+
+Where an additional cost allowance is included, explain whether it is added to the cost before calculating the suggested price.
+
+Never confuse gross contribution with net profit.
+
+### Tool C: Promotion planner
+
+Inputs:
+
+* Original price.
+* Discount percentage.
+* Optional unit cost.
+* Optional target sales quantity.
+
+Outputs:
+
+* Discounted price.
+* Customer saving.
+* Gross contribution per item where cost is supplied.
+* Clearly labelled scenario totals where quantities are supplied.
+
+Use appropriate currency formatting and rounding.
+
+All three tools must update correctly, validate input, reset reliably, and support a genuine report download where provided.
+
+Reports must include inputs, formulas, results, generation date, and appropriate caveats.
+
+## DESTINATION 05 — BRIEFING CHAMBER
+
+**Role:** Project qualification and enquiry submission.
+
+**Spatial identity:** A focused, calm, premium briefing room.
+
+Design language:
+
+* Controlled illumination.
+* A clear central focal point.
+* Strong visual hierarchy.
+* Minimal distraction.
+* A feeling of purposeful collaboration.
+
+Implement an enquiry form with:
+
+* Name.
+* Business name, where applicable.
+* Email.
+* Optional phone.
+* Service of interest.
+* Project description.
+* Optional budget.
+* Optional timeframe.
+* Privacy acknowledgement.
+
+Validate on both client and server.
+
+Protect against abuse and accidental duplicate submissions.
+
+Provide accurate loading, success, and failure states.
+
+Save enquiries to the database when configured.
+
+Never report that an email has been sent unless delivery has actually been confirmed.
+
+## DESTINATION 06 — KNOWLEDGE ARCHIVE
+
+**Role:** Useful educational content for food businesses.
+
+**Spatial identity:** A layered editorial archive with depth, visual rhythm, and organised discovery.
+
+Create structured articles covering relevant subjects such as:
+
+* Digital menu design.
+* Website essentials.
+* Local online visibility.
+* Social-media planning.
+* Menu pricing.
+* Practical digital tools for restaurants.
+
+Each article should have a title, summary, category, date, and readable content.
+
+Do not invent research or statistics.
+
+Use accessible HTML for article content and provide direct URLs.
+
+If a full publishing CMS is not implemented, use maintainable structured content files and document how to add articles.
+
+## DESTINATION 07 — STUDIO OBSERVATORY
+
+**Role:** Brand story and working approach.
+
+**Spatial identity:** An expansive observation environment with a deliberate horizon, elegant structures, and thoughtful use of negative space.
+
+Explain:
+
+* What Forkframe Studio does.
+* Who it serves.
+* Why its services are relevant.
+* How projects are approached.
+* How visitors can begin a conversation.
+
+Do not invent biographies, staff, credentials, office locations, awards, or company history.
+
+Use credible, direct language rather than generic marketing claims.
+
+## DESTINATION 08 — CONTACT GATEWAY
+
+**Role:** Direct contact and final conversion.
+
+**Spatial identity:** A refined gateway connecting the digital world to a real working relationship.
+
+Display the official contact email:
+
+**[studioforkframe@gmail.com](mailto:studioforkframe@gmail.com)**
+
+Provide an accessible email action and a clear route to the enquiry form.
+
+Do not invent telephone numbers, postal addresses, opening hours, or social accounts.
+
+The destination must work without WebGL and through a direct URL.
+
+## DESTINATION 09 — ADMINISTRATION
+
+The administration system is a protected route, not a publicly discoverable destination in the orbital hub.
+
+It must provide:
+
+* Secure sign-in.
+* Protected enquiry listing.
+* Enquiry details.
+* Search and filtering.
+* Status management.
+* Actual email-delivery state.
+* Privacy-conscious traffic reporting where implemented.
+* Secure sign-out.
+
+Every protected API operation must enforce server-side authentication and authorisation.
+
+Hiding the admin link is not security.
+
+---
+
+# 08 — THE CREATIVE INTERACTION STANDARD
+
+The experience must feel alive because it responds meaningfully to the visitor, not because everything is constantly moving.
+
+## 8.1 Interaction feedback
+
+Implement polished, consistent feedback for:
+
+* Hover.
+* Focus.
+* Selection.
+* Dragging.
+* Activation.
+* Loading.
+* Completion.
+* Failure.
+* Navigation.
+* Return to hub.
+
+Use subtle changes in lighting, scale, position, material response, or camera focus where appropriate.
+
+Every effect should have a clear purpose.
+
+## 8.2 Interaction hierarchy
+
+Establish three levels of interaction:
+
+**Level 1 — Discovery:** Hover, focus, or selection reveals useful information.
+
+**Level 2 — Commitment:** The visitor activates a destination, opens a tool, or enters a workflow.
+
+**Level 3 — Completion:** The visitor finishes an action, such as generating a design, calculating a result, or submitting an enquiry.
+
+Make each stage visually distinguishable.
+
+Do not make visitors guess whether an action has registered.
+
+## 8.3 Sound and motion
+
+Sound is optional and must remain muted until the user explicitly enables it where required by browser policies.
+
+Provide an accessible sound toggle.
+
+Provide reduced-motion mode and respect system preferences.
+
+Do not rely on audio to communicate important information.
+
+Never trap users in mandatory cinematic sequences.
+
+---
+
+# 09 — THE APPLICATION MUST WORK OUTSIDE THE 3D WORLD
+
+The immersive experience must not make the business content inaccessible to search engines, assistive technology, or users on unsupported devices.
+
+Implement real application routes, including appropriate equivalents of:
+
+* `/`
+* `/services`
+* `/portfolio`
+* `/social-studio`
+* `/tools`
+* `/insights`
+* `/about`
+* `/contact`
+* `/briefing`
+* `/admin/login`
+* `/admin`
+
+Use additional routes for articles and individual projects where useful.
+
+Each destination must have a direct URL.
+
+The current URL, visible destination, and application state must remain consistent.
+
+Support browser back and forward navigation without treating every animation event as a page navigation.
+
+Direct links must load the correct content without forcing visitors to replay the full opening sequence.
+
+Implement suitable metadata, page titles, descriptions, sitemap, and robots policy.
+
+Keep important text in semantic HTML.
+
+When WebGL is unavailable, provide an attractive alternative that preserves the same essential content, tools, and navigation.
+
+---
+
+# 10 — TECHNICAL ARCHITECTURE
+
+Use a maintainable, modern stack suited to the actual environment.
+
+Preferred foundation:
+
+* Next.js.
+* React.
+* TypeScript.
+* Three.js.
+* React Three Fiber.
+* Drei where beneficial.
+* A clear animation/state-machine system.
+* A suitable database and ORM or query layer.
+* Server-side validation.
+* Secure authentication.
+* Real email integration.
+* Automated tests.
+* Browser testing where available.
+
+Inspect the available runtime and choose mutually compatible stable versions.
+
+Do not install unnecessary dependencies or introduce competing frameworks.
+
+## 10.1 Code boundaries
+
+Separate:
+
+* Scene components.
+* Destination components.
+* Camera and transition systems.
+* Navigation and application state.
+* UI overlays.
+* Business logic.
+* Social Studio editor.
+* Calculator logic.
+* API routes.
+* Authentication.
+* Database access.
+* Email delivery.
+* Analytics.
+* Tests.
+
+Avoid a monolithic application component.
+
+Keep business calculations independent from the UI so they can be tested directly.
+
+Keep high-frequency 3D animation out of unnecessary React state updates.
+
+## 10.2 Lifecycle management
+
+Handle:
+
+* Scene mounting and unmounting.
+* Geometry disposal.
+* Material and texture disposal.
+* Event-listener cleanup.
+* Animation cancellation.
+* Request cancellation where appropriate.
+* Failed asset loading.
+* Duplicate interaction prevention.
+* Transition recovery.
+
+The application must not accumulate event listeners or GPU resources as users explore destinations.
+
+## 10.3 Application state
+
+Use an explicit navigation state machine.
+
+At minimum, represent:
+
+* Booting.
+* Intro ready.
+* Laptop activation.
+* Portal transition.
+* Hub ready.
+* Destination transition.
+* Destination ready.
+* Returning to hub.
+* Loading failure.
+* Recovery.
+
+Define valid transitions and reject invalid ones.
+
+Prevent conflicting animations, duplicate route changes, stuck loading states, and unexpected camera positions.
+
+---
+
+# 11 — SECURITY, DATA, AND EMAIL
+
+Implement the minimum necessary backend infrastructure without unnecessary complexity or cost.
+
+## 11.1 Database
+
+Design a reproducible schema for enquiries, statuses, timestamps, delivery state, and any other genuinely necessary records.
+
+Use migrations or a clear schema setup procedure.
+
+Use a suitable free-tier-compatible option where available.
+
+Do not assume credentials exist.
+
+Do not store customer-uploaded images or designs remotely unless a clearly explained feature genuinely requires it.
+
+## 11.2 Enquiry lifecycle
+
+Implement this complete process:
+
+1. Receive the submission.
+2. Validate and sanitise input.
+3. Apply rate limits and spam protection.
+4. Save the enquiry.
+5. Attempt email delivery if configured.
+6. Record the actual result.
+7. Return an accurate response.
+8. Make the enquiry available to an authorised administrator.
+
+If email fails, preserve the enquiry when possible.
+
+Do not mark delivery successful before confirmation.
+
+Do not log unnecessary personal information.
+
+## 11.3 Email configuration
+
+Use a server-side adapter with environment-based provider configuration.
+
+Never expose secrets to the browser.
+
+If email credentials are unavailable, the application must still function, save enquiries where possible, and display a truthful delivery state.
+
+Provide an accurate `.env.example` and document the required configuration.
+
+Do not pretend that writing to a log is equivalent to sending an email.
+
+## 11.4 Authentication
+
+Implement secure administrator authentication and authorisation.
+
+Mandatory requirements:
+
+* No hardcoded default administrator password.
+* No fallback production secret.
+* No predictable static session token.
+* No client-side-only protection.
+* No unauthenticated access to enquiry APIs.
+* Secure session handling.
+* Appropriate cookie flags in production.
+* Session expiry and invalidation.
+* Safe sign-out.
+* Sensible login abuse protection.
+* No secrets in public environment variables.
+
+If an external authentication service requires unavailable credentials, document the required setup and do not fake a successful secure login.
+
+## 11.5 Privacy and analytics
+
+Collect only necessary data.
+
+Provide a proportionate privacy notice explaining enquiry storage, notification delivery, and analytics.
+
+If analytics are implemented, prefer aggregate counts and meaningful navigation events.
+
+Do not collect raw cursor movements, full form contents, or sensitive personal data as analytics events.
+
+Do not invent traffic figures.
+
+Do not claim legal compliance merely because a privacy notice exists.
+
+---
+
+# 12 — PERFORMANCE ENGINEERING
+
+The experience must be designed for real devices, not only for a powerful development machine.
+
+## 12.1 Rendering
+
+Aim for approximately 60 FPS on capable desktop hardware and stable performance around 30 FPS on supported lower-powered devices, where practical.
+
+Measure rather than assume.
+
+Use:
+
+* Instancing.
+* Shared geometry.
+* Shared materials.
+* Optimised textures.
+* Controlled shadow maps.
+* Selective post-processing.
+* Adaptive pixel ratio.
+* Reduced mobile scene complexity.
+* Lazy-loaded destinations.
+* Asset preloading.
+* Proper disposal of unused GPU resources.
+
+Avoid excessive transparency, expensive full-screen effects, and large numbers of independently animated objects.
+
+## 12.2 Loading
+
+Load the minimum required to enter the experience.
+
+Do not require every destination to be downloaded before the opening scene becomes available.
+
+Provide useful loading feedback and handle failed assets.
+
+Do not show fake progress percentages.
+
+## 12.3 Mobile adaptation
+
+Create deliberate mobile compositions.
+
+Reposition or simplify scene elements, reduce rendering cost, improve hit areas, and adapt camera movement.
+
+Test touch selection, scrolling, forms, editing tools, and direct navigation.
+
+Do not claim real-device testing unless an actual device has been used.
+
+## 12.4 Error handling
+
+Provide graceful recovery for:
+
+* WebGL failure.
+* Asset errors.
+* API errors.
+* Database outages.
+* Email delivery failures.
+* Invalid inputs.
+* Expired sessions.
+* Export failures.
+* Unexpected transitions.
+
+No critical failure should leave the user permanently trapped.
+
+---
+
+# 13 — IMPLEMENTATION EXECUTION ORDER
+
+Follow this order without becoming trapped in planning.
+
+## Stage 1: Establish the foundation
+
+Create the application, routing, design tokens, responsive layout, TypeScript structure, testing setup, and basic scene.
+
+Run the initial build and resolve setup issues.
+
+## Stage 2: Build the opening
+
+Create the physical workspace, laptop, entry controls, and portal sequence.
+
+Verify that the interaction works.
+
+## Stage 3: Build the transition engine
+
+Implement the camera choreography, tunnel geometry, state machine, loading, and recovery.
+
+Verify a complete journey.
+
+## Stage 4: Build the orbital hub
+
+Implement destination structures, manipulation, selection, focus movement, reset, and return navigation.
+
+Verify mouse and touch behaviour.
+
+## Stage 5: Complete the first vertical slice
+
+Finish this entire journey before expanding the world:
+
+**OPENING → LAPTOP → PORTAL → TUNNEL → HUB → UNIQUE DESTINATION → FUNCTIONAL INTERACTION → RETURN TO HUB**
+
+The destination must contain a real interaction and a distinctive environment.
+
+This is the first non-negotiable milestone.
+
+## Stage 6: Build the other environments
+
+Add the remaining destinations individually.
+
+For each destination, finish its visual identity, arrival sequence, primary interaction, accessible alternative, and return path before moving on.
+
+## Stage 7: Complete the tools
+
+Implement and verify the calculators and Social Studio.
+
+Use known test cases and inspect exported files.
+
+## Stage 8: Complete the backend
+
+Implement enquiry persistence, email integration, secure authentication, administration, and any supported analytics.
+
+Test failure scenarios as well as success.
+
+## Stage 9: Refine the complete experience
+
+Perform visual inspection, responsive checks, accessibility checks, performance checks, and browser testing.
+
+Fix discovered issues.
+
+## Stage 10: Prepare for owner review
+
+Write the README, setup instructions, configuration requirements, test results, limitations, and deployment preparation instructions.
+
+Do not publish the application without explicit approval.
+
+---
+
+# 14 — REQUIRED QUALITY GATES
+
+No stage is complete merely because its code has been written.
+
+## Gate A: Visual integrity
+
+Verify that:
+
+* The composition has a clear focal point.
+* Lighting and materials are coherent.
+* Typography is legible.
+* Controls do not overlap.
+* Transitions are smooth.
+* Each destination has a recognisable identity.
+* Mobile layouts are deliberately composed.
+* The scene is not cluttered.
+
+## Gate B: Navigation integrity
+
+Verify that:
+
+* Every destination is selectable.
+* Every transition finishes.
+* Destination state is correct.
+* Return navigation works.
+* Direct URLs work.
+* Browser history works.
+* Failed transitions recover.
+* Controls do not remain disabled accidentally.
+
+## Gate C: Functional integrity
+
+Verify that:
+
+* Calculations produce expected results.
+* Inputs are validated.
+* Downloads are genuine files.
+* Social Studio editing works.
+* Enquiries are persisted where configured.
+* Email delivery state is accurate.
+* Protected routes reject unauthorised access.
+
+## Gate D: Responsive integrity
+
+Verify desktop, tablet, and mobile layouts.
+
+Check touch controls, text readability, camera framing, form usability, and reduced-motion behaviour.
+
+## Gate E: Engineering integrity
+
+Run the available:
+
+* Production build.
+* TypeScript checks.
+* Linting.
+* Unit tests.
+* Integration tests.
+* Browser tests.
+
+Fix important failures and rerun the affected checks.
+
+If a check cannot run, report it honestly.
+
+---
+
+# 15 — THE FIVE-DESTINATION VISUAL DIFFERENTIATION TEST
+
+Before accepting the immersive experience, inspect at least five different destination journeys.
+
+For each, record:
+
+* Starting camera position.
+* Travel path.
+* Tunnel or transition identity.
+* Arrival movement.
+* Environment silhouette.
+* Dominant material language.
+* Lighting character.
+* Primary interaction.
+* Exit choreography.
+
+Compare the results.
+
+If several destinations have essentially the same environment with different labels, redesign them.
+
+If every destination uses the same tunnel and identical camera movement, introduce meaningful destination-specific variations.
+
+If a destination could be removed without losing any spatial identity or useful interaction, it needs further design.
+
+**The objective is a shared universe containing distinct places, not one scene copied repeatedly.**
+
+---
+
+# 16 — FINAL ACCEPTANCE TEST
+
+The build must be judged against actual behaviour and evidence.
+
+At minimum:
+
+1. Load the application.
+2. Complete the cinematic entry.
+3. Travel into the hub.
+4. Manipulate the hub.
+5. Enter several different destinations.
+6. Confirm the destinations are visually distinct.
+7. Use a real interaction inside each tested destination.
+8. Return to the hub.
+9. Open a destination directly through its URL.
+10. Use browser navigation.
+11. Test the mobile layout.
+12. Run calculator test cases.
+13. Export and inspect a Social Studio image.
+14. Submit a valid enquiry where the backend is configured.
+15. Verify persistence and truthful notification status.
+16. Attempt unauthorised access to protected endpoints.
+17. Test reduced-motion behaviour.
+18. Run the production build and relevant automated checks.
+
+Use actual screenshots, browser inspection, logs, and test output wherever available.
+
+Do not fabricate evidence or claim that an untested scenario passed.
+
+---
+
+# 17 — OPERATIONAL RULES
+
+Work independently and decisively within the available environment.
+
+Inspect the tools and runtime, establish the architecture, and begin implementation promptly.
+
+Do not stop after a plan.
+
+Do not repeatedly rewrite settled architecture.
+
+Do not create a huge volume of unverified code.
+
+Do not hide errors to obtain a successful build.
+
+Do not remove tests simply because they fail.
+
+Do not invent credentials or external configuration.
+
+Do not make unauthorised purchases, publish secrets, push to public repositories, or deploy publicly without explicit approval.
+
+Maintain a concise implementation checklist with the states:
+
+* Not started.
+* In progress.
+* Implemented.
+* Verified.
+* Blocked.
+
+Update it according to actual work.
+
+Prioritise the highest-impact work in this order:
+
+1. Reliable foundation.
+2. Exceptional working vertical slice.
+3. Distinct spatial destinations.
+4. Functional business tools.
+5. Secure enquiry and administration system.
+6. Responsive refinement and final verification.
+
+If resources become constrained, reduce secondary scope rather than allowing the core journey to remain unfinished.
+
+---
+
+# 18 — DEFINITION OF SUCCESS
+
+Forkframe Studio succeeds when the visitor experiences the following:
+
+They arrive in a beautifully composed digital workspace.
+
+They discover a laptop that feels like a physical gateway.
+
+They activate it and are carried through a genuine spatial portal.
+
+They emerge into an interactive digital universe.
+
+They can explore a sophisticated navigation hub and discover distinct environments.
+
+They enter a creative workshop, examine a portfolio, use practical business tools, create social-media designs, explore useful knowledge, and submit a genuine project enquiry.
+
+The experience is immersive without being confusing, visually ambitious without being wasteful, and commercially useful without becoming a conventional website.
+
+Behind the experience, the application is maintainable, secure, accessible, responsive, and honest about its capabilities.
+
+The finished product must be demonstrable and usable—not simply described as futuristic.
+
+**Build a real digital world. Give every destination a purpose. Make every important interaction work. Verify the result.**
+
+Begin from zero and work all the way through to the strongest complete, tested result the environment permits.
+
+At handover, report what is genuinely finished, what has been tested, what remains incomplete, what external configuration is required, and what must happen before public deployment.
+
+**FORKFRAME STUDIO — THE INFINITE DIMENSION.**
+
+**From zero to a functioning, immersive digital universe.**

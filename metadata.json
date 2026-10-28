@@ -1,0 +1,6 @@
+{
+  "name": "Forkframe Studio — The Infinite Dimension",
+  "description": "Immersive 3D digital universe, creative technology studio, and full-stack digital platform for food businesses.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
