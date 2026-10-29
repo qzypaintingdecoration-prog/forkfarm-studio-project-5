@@ -71,7 +71,7 @@ export const OmniSearchModal: React.FC<OmniSearchModalProps> = ({
     {
       id: 'srv-3',
       title: 'Digital QR Menus & Allergen Disclosure Systems',
-      subtitle: 'Mobile-first interactive menus with 14 FSA allergen flags and sommelier pairings.',
+      subtitle: 'Mobile-first interactive menus with 14 FSA allergen flags and botanical mocktail pairings.',
       category: 'Service',
       icon: Utensils,
       destinationTarget: 'services',
@@ -169,13 +169,13 @@ export const OmniSearchModal: React.FC<OmniSearchModalProps> = ({
       badge: '2,400 Loaves'
     },
     {
-      id: 'cs-stjudes',
-      title: 'St. Jude’s Taproom & Cellars — Bermondsey',
-      subtitle: 'Historic railway arch taproom portal with live keg tap status (+94% event inquiries).',
+      id: 'cs-flame',
+      title: 'The Charcoal Hearth & Smokehouse — Bermondsey',
+      subtitle: 'Interactive live-fire dining portal with wood-fired skewers and real-time smoker batch indicators (+142% bookings).',
       category: 'Case Study',
       icon: Sparkles,
       destinationTarget: 'portfolio',
-      badge: '+94% Inquiries'
+      badge: '+142% Bookings'
     },
     {
       id: 'cs-neptune',
@@ -224,17 +224,6 @@ export const OmniSearchModal: React.FC<OmniSearchModalProps> = ({
       badge: 'Onboarding'
     },
     // Actions
-    {
-      id: 'act-download',
-      title: 'Download Project Source & Assets (.ZIP)',
-      subtitle: 'Complete source code, 80 visual assets, audio engine, and 4K photographs.',
-      category: 'Action',
-      icon: FileDown,
-      action: () => {
-        window.location.href = '/download/forkframe-studio-infinite-dimension.zip';
-      },
-      badge: 'Source Code'
-    },
     {
       id: 'act-contact',
       title: 'Direct Hospitality Concierge',

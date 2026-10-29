@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="bgGradSmoke" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1c130c"/>
+      <stop offset="50%" stop-color="#120e0a"/>
+      <stop offset="100%" stop-color="#080604"/>
+    </linearGradient>
+    <radialGradient id="auraSmoke" cx="50%" cy="45%" r="60%">
+      <stop offset="0%" stop-color="#FF6A2A" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#FF6A2A" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="800" height="500" rx="20" fill="url(#bgGradSmoke)"/>
+  <rect width="800" height="500" rx="20" fill="url(#auraSmoke)"/>
+  
+  <rect x="24" y="24" width="752" height="452" rx="14" fill="none" stroke="#FF6A2A" stroke-opacity="0.3" stroke-width="1.5"/>
+  <rect x="36" y="36" width="728" height="428" rx="10" fill="none" stroke="#F4F0E8" stroke-opacity="0.08" stroke-width="1"/>
+
+  <text x="50" y="65" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="700" fill="#FF6A2A" letter-spacing="3">FORKFRAME STUDIO · PORTFOLIO GALAXY</text>
+  <text x="750" y="65" text-anchor="end" font-family="'JetBrains Mono', monospace" font-size="11" fill="#A7A39B" opacity="0.8">SPEC-09</text>
+
+  <text x="50" y="110" font-family="'Plus Jakarta Sans', sans-serif" font-size="28" font-weight="800" fill="#F4F0E8">The Charcoal Hearth &amp; Smokehouse</text>
+  <text x="50" y="135" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" font-weight="600" fill="#C8A879">Artisanal Live-Fire Charcoal Grill · Bermondsey &amp; London Bridge</text>
+
+  <rect x="50" y="160" width="700" height="240" rx="12" fill="#0c0d10" stroke="#FF6A2A" stroke-opacity="0.2"/>
+  <text x="70" y="200" font-family="'JetBrains Mono', monospace" font-size="12" fill="#FF6A2A">> LIVE SMOKER BATCH SENSORS: 100% OPERATIONAL</text>
+  <text x="70" y="230" font-family="'JetBrains Mono', monospace" font-size="12" fill="#F4F0E8">> WOOD-FIRED CHARCOAL SKEWER ENGINE: ACTIVE</text>
+  <text x="70" y="260" font-family="'JetBrains Mono', monospace" font-size="12" fill="#A7A39B">> ARTISANAL MOCKTAIL INFUSION PAIRING CARDS: ENABLED</text>
+  <text x="70" y="290" font-family="'JetBrains Mono', monospace" font-size="12" fill="#10B981">> DIRECT ONLINE RESERVATION SURGE: +142% VERIFIED</text>
+  <text x="70" y="320" font-family="'JetBrains Mono', monospace" font-size="12" fill="#F4F0E8">> FOOD HYGIENE &amp; 100% HALAL SOURCING AUDIT: COMPLIANT</text>
+
+  <text x="50" y="440" font-family="'JetBrains Mono', monospace" font-size="11" fill="#71717A">Architecture: React 19 · WebSockets · Tailwind CSS · High-Frequency Ticket Dispatch</text>
+</svg>

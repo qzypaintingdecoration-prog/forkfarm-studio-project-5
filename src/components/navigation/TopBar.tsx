@@ -39,11 +39,11 @@ export const TopBar: React.FC<TopBarProps> = ({
           }}
           className="flex items-center gap-2.5 sm:gap-3 text-left group cursor-pointer shrink-0"
         >
-          <div className="relative w-8 h-8 sm:w-9 sm:h-9 rounded-lg overflow-hidden bg-black/60 border border-[#FF6A2A]/40 flex items-center justify-center p-0.5 shadow-[0_0_12px_rgba(255,106,42,0.3)]">
+          <div className="relative w-11 h-11 sm:w-12 sm:h-12 rounded-xl overflow-hidden bg-black/70 border border-[#FF6A2A]/50 flex items-center justify-center p-0.5 shadow-[0_0_18px_rgba(255,106,42,0.35)] shrink-0 transition-transform group-hover:scale-105">
             <img
               src="/images/brand/logo.jpeg"
-              alt="Forkframe Studio Logo"
-              className="w-full h-full object-cover rounded"
+              alt="Forkframe Studio Official Logo"
+              className="w-full h-full object-cover rounded-lg"
               onError={(e) => {
                 // Graceful fallback to styled monogram if path fails
                 (e.currentTarget as HTMLElement).style.display = 'none';
@@ -127,18 +127,6 @@ export const TopBar: React.FC<TopBarProps> = ({
             </button>
           )}
 
-          {/* Download Project ZIP link */}
-          <a
-            href="/download/forkframe-studio-infinite-dimension.zip"
-            download="forkframe-studio-infinite-dimension.zip"
-            onClick={() => soundEngine.playArrivalChime()}
-            title="Download Full Project Source & Assets (.ZIP)"
-            className="hidden sm:flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-white/5 hover:bg-white/10 text-neutral-300 hover:text-white border border-white/10 text-xs font-semibold transition-all cursor-pointer"
-          >
-            <Download className="w-3.5 h-3.5 text-[#FF6A2A]" />
-            <span className="hidden lg:inline">Download ZIP</span>
-            <span className="lg:hidden">ZIP</span>
-          </a>
 
           {/* Sound FX toggle */}
           <button
@@ -244,18 +232,6 @@ export const TopBar: React.FC<TopBarProps> = ({
           </div>
 
           <div className="mt-8 pt-4 border-t border-white/10 space-y-3">
-            <a
-              href="/download/forkframe-studio-infinite-dimension.zip"
-              download="forkframe-studio-infinite-dimension.zip"
-              onClick={() => {
-                soundEngine.playArrivalChime();
-                setMobileMenuOpen(false);
-              }}
-              className="w-full py-3 rounded-xl bg-white/10 text-center flex items-center justify-center gap-2 text-xs font-bold text-white border border-white/20"
-            >
-              <Download className="w-4 h-4 text-[#FF6A2A]" />
-              <span>Download Project ZIP (2.5 MB)</span>
-            </a>
             <div className="text-center text-[10px] text-neutral-500 font-mono">
               Forkframe Studio · studioforkframe@gmail.com
             </div>

@@ -670,32 +670,32 @@ Produced by Forkframe Studio Food Business Tools · studioforkframe@gmail.com
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3.5">
           {[
-            { id: '01', title: 'Food-Cost % Formula', desc: 'Prime portion net margin derivation', img: '/images/calculators/01_food_cost_margin_formula.svg' },
-            { id: '02', title: 'Menu Pricing Ladder', desc: 'Target cost % to gross retail calculation', img: '/images/calculators/02_menu_pricing_ladder.svg' },
-            { id: '03', title: 'Promotional Simulator', desc: 'Volume multiplier required to offset discounts', img: '/images/calculators/03_promotional_discount_simulator.svg' },
-            { id: '04', title: 'Yield & Waste Loss', desc: 'Trimming and cooking loss impact on cost', img: '/images/calculators/04_yield_and_waste_factor.svg' },
-            { id: '05', title: 'Batch to Portion', desc: 'Stockpot batch division and portion yield', img: '/images/calculators/05_batch_to_portion_breakdown.svg' },
-            { id: '06', title: 'UK VAT & Net Tax', desc: '20% gross tax decoupling from menu profit', img: '/images/calculators/06_vat_and_net_tax_architecture.svg' },
-            { id: '07', title: 'Prep Labour Cost', desc: 'Hourly prep time amortized across dishes', img: '/images/calculators/07_kitchen_prep_labour_amortization.svg' },
-            { id: '08', title: 'Aggregator Drag', desc: '30% commission erosion vs direct ordering', img: '/images/calculators/08_delivery_aggregator_margin_drag.svg' },
-            { id: '09', title: 'Seasonal Hedging', desc: 'Wholesale volatility buffering strategies', img: '/images/calculators/09_seasonal_ingredient_hedging.svg' },
-            { id: '10', title: 'Prime Cost Matrix', desc: 'COGS + labour combined operating ceiling', img: '/images/calculators/10_prime_cost_breakeven_matrix.svg' }
+            { id: '01', title: 'Food-Cost % Formula', desc: 'Prime portion net margin derivation', img: '/images/calculators/01_food_cost_formula.jpg' },
+            { id: '02', title: 'Menu Pricing Ladder', desc: 'Target cost % to gross retail calculation', img: '/images/calculators/02_menu_pricing_ladder.jpg' },
+            { id: '03', title: 'Promotional Simulator', desc: 'Volume multiplier required to offset discounts', img: '/images/calculators/03_promotional_simulator.jpg' },
+            { id: '04', title: 'Yield & Waste Loss', desc: 'Trimming and cooking loss impact on cost', img: '/images/calculators/04_yield_and_waste.jpg' },
+            { id: '05', title: 'Batch to Portion', desc: 'Stockpot batch division and portion yield', img: '/images/calculators/05_batch_to_portion.jpg' },
+            { id: '06', title: 'UK VAT & Net Tax', desc: '20% gross tax decoupling from menu profit', img: '/images/calculators/06_vat_and_tax.jpg' },
+            { id: '07', title: 'Prep Labour Cost', desc: 'Hourly prep time amortized across dishes', img: '/images/calculators/07_prep_labour_cost.jpg' },
+            { id: '08', title: 'Aggregator Drag', desc: '30% commission erosion vs direct ordering', img: '/images/calculators/08_aggregator_drag.jpg' },
+            { id: '09', title: 'Seasonal Hedging', desc: 'Wholesale volatility buffering strategies', img: '/images/calculators/09_seasonal_hedging.jpg' },
+            { id: '10', title: 'Prime Cost Matrix', desc: 'COGS + labour combined operating ceiling', img: '/images/calculators/10_prime_cost_matrix.jpg' }
           ].map((diag) => (
             <div
               key={diag.id}
-              className="p-3 rounded-xl bg-[#191A1D]/80 border border-white/10 hover:border-[#FF6A2A]/50 transition-all group flex flex-col justify-between"
+              className="p-3 rounded-xl bg-[#191A1D]/80 border border-white/10 hover:border-[#FF6A2A]/50 transition-all group flex flex-col justify-between cursor-pointer"
             >
               <div>
-                <div className="w-full h-24 rounded-lg overflow-hidden bg-black/60 border border-white/10 mb-2 relative">
+                <div className="w-full h-28 rounded-lg overflow-hidden bg-black/60 border border-white/10 mb-2 relative">
                   <img
                     src={diag.img}
                     alt={diag.title}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     loading="lazy"
                   />
                   <div className="absolute top-1 left-1">
-                    <span className="text-[9px] font-mono font-bold px-1.5 py-0.5 rounded bg-black/80 text-[#FF6A2A]">
-                      {diag.id}
+                    <span className="text-[9px] font-mono font-bold px-1.5 py-0.5 rounded bg-black/80 text-[#FF6A2A] border border-[#FF6A2A]/30">
+                      MODEL {diag.id}
                     </span>
                   </div>
                 </div>

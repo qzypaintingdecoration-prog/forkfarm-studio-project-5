@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import React, { useState, useEffect, useCallback } from 'react';
+import React, { useState, useEffect, useCallback, useRef } from 'react';
 import { ArrowLeft, ArrowRight, FastForward, Sparkles, Volume2, VolumeX, Eye, EyeOff, X, Compass, RotateCcw } from 'lucide-react';
 import { SceneId, DestinationId } from './types';
 import { DESTINATIONS, getDestinationById, getDestinationByRoute } from './services/destinationRegistry';
@@ -33,6 +33,10 @@ export default function App() {
   const [reportDownloaded, setReportDownloaded] = useState<boolean>(false);
   const [isSearchOpen, setIsSearchOpen] = useState<boolean>(false);
 
+  // Transition and race-condition guards
+  const transitionTimerRef = useRef<NodeJS.Timeout | null>(null);
+  const isNavigatingRef = useRef<boolean>(false);
+
   // Instant export of sample culinary margin report directly from Hub
   const handleInstantDownloadReport = useCallback(() => {
     soundEngine.playArrivalChime();
@@ -42,13 +46,13 @@ export default function App() {
 FORKFRAME STUDIO · THE INFINITE DIMENSION
 EXECUTIVE CULINARY MARGIN & PRICING BENCHMARK REPORT
 Generated from Orbital Hub Quick Actions on: ${timestamp}
-Location: United Kingdom Food & Hospitality Standard
+Location: United Kingdom Food & Hospitality Standard (Halal-First Certified Standards)
 ================================================================================
 
 1. KEY INDUSTRY BENCHMARKS (UK 2026):
-- Fine Dining / Cellar: 20% - 25% target food cost
-- Gastro-Pubs & Bistros: 26% - 30% target food cost
-- Fast Casual & Burger Craft: 28% - 34% target food cost
+- Fine Dining / Tasting Atelier: 20% - 25% target food cost
+- Gourmet Bistros & Halal Grills: 26% - 30% target food cost
+- Fast Casual & Smash Burger Craft: 28% - 34% target food cost
 - Artisan Bakery & Viennoiserie: 18% - 22% target food cost
 
 2. FORMULAS ENFORCED IN FORKFRAME TOOLS:
@@ -156,59 +160,97 @@ For tailored recipe audits or digital ordering systems, open the Briefing Chambe
 
   // Step Inside / Activate laptop portal
   const handleSelectLaptop = useCallback(() => {
+    if (isNavigatingRef.current) return;
+    isNavigatingRef.current = true;
     soundEngine.playLaptopActivate();
     setScene('LAPTOP_ACTIVE');
 
-    setTimeout(() => {
+    if (transitionTimerRef.current) {
+      clearTimeout(transitionTimerRef.current);
+    }
+
+    transitionTimerRef.current = setTimeout(() => {
       soundEngine.startTunnelSound(reducedMotion ? 0.8 : 1.8);
       setScene('TUNNEL');
+      setActiveDestination(null);
 
-      setTimeout(() => {
+      transitionTimerRef.current = setTimeout(() => {
         soundEngine.playArrivalChime();
         setScene('HUB');
         setActiveDestination(null);
         updateRoute('hub');
+        isNavigatingRef.current = false;
       }, reducedMotion ? 400 : 1900);
     }, 600);
   }, [reducedMotion]);
 
   // Navigate to a destination via tunnel transition
   const handleSelectDestination = useCallback((dest: DestinationId) => {
+    if (isNavigatingRef.current) return;
     soundEngine.playSelectClick();
+
+    if (transitionTimerRef.current) {
+      clearTimeout(transitionTimerRef.current);
+    }
 
     if (reducedMotion) {
       soundEngine.playArrivalChime();
       setActiveDestination(dest);
       setScene('TERMINAL');
       updateRoute(dest);
+      isNavigatingRef.current = false;
       return;
     }
 
-    // Tunnel travel
-    soundEngine.startTunnelSound(1.2);
+    // Always launch full 3D tunnel journey with immediate target destination awareness
+    isNavigatingRef.current = true;
+    setActiveDestination(dest);
+    soundEngine.startTunnelSound(1.4);
     setScene('TUNNEL');
 
-    setTimeout(() => {
+    transitionTimerRef.current = setTimeout(() => {
       soundEngine.playArrivalChime();
-      setActiveDestination(dest);
       setScene('TERMINAL');
       updateRoute(dest);
-    }, 1300);
+      isNavigatingRef.current = false;
+    }, 1400);
   }, [reducedMotion]);
 
   // Return to Orbital Hub
   const handleReturnToHub = useCallback(() => {
+    if (transitionTimerRef.current) {
+      clearTimeout(transitionTimerRef.current);
+    }
+    isNavigatingRef.current = false;
     soundEngine.playSelectClick();
     setActiveDestination(null);
     setScene('HUB');
     updateRoute('hub');
   }, []);
 
+  // Skip Tunnel Travel instantly
+  const handleSkipTunnel = useCallback(() => {
+    if (transitionTimerRef.current) {
+      clearTimeout(transitionTimerRef.current);
+    }
+    isNavigatingRef.current = false;
+    soundEngine.playArrivalChime();
+    if (activeDestination) {
+      setScene('TERMINAL');
+      updateRoute(activeDestination);
+    } else {
+      setScene('HUB');
+      updateRoute('hub');
+    }
+  }, [activeDestination]);
+
   // Top Bar Navigation & OmniSearch
   const handleTopBarNavigate = (target: DestinationId | 'hub' | 'admin') => {
     if (target === 'hub') {
       handleReturnToHub();
     } else if (target === 'admin') {
+      if (transitionTimerRef.current) clearTimeout(transitionTimerRef.current);
+      isNavigatingRef.current = false;
       setActiveDestination('admin');
       setScene('TERMINAL');
       updateRoute('admin');
@@ -262,16 +304,16 @@ For tailored recipe audits or digital ordering systems, open the Briefing Chambe
       {/* ======================================================== */}
       {scene === 'VOID' && (
         <div className="relative z-10 min-h-screen flex flex-col justify-between items-center p-6 pt-24 pb-14 pointer-events-none">
-          {/* Top Opening Message with Official Logo */}
+          {/* Top Opening Message with Prominently Enlarged Official Logo */}
           <div className="text-center animate-fadeIn max-w-2xl mx-auto flex flex-col items-center">
-            <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-2xl overflow-hidden bg-black/70 border border-[#FF6A2A]/50 p-1 mb-4 shadow-[0_0_35px_rgba(255,106,42,0.35)]">
+            <div className="w-28 h-28 sm:w-36 sm:h-36 md:w-40 md:h-40 rounded-3xl overflow-hidden bg-black/75 border-2 border-[#FF6A2A]/60 p-1.5 mb-5 shadow-[0_0_50px_rgba(255,106,42,0.45)] transition-transform hover:scale-105 pointer-events-auto">
               <img
                 src="/images/brand/logo.jpeg"
                 alt="Forkframe Studio Official Logo"
-                className="w-full h-full object-cover rounded-xl"
+                className="w-full h-full object-cover rounded-2xl"
               />
             </div>
-            <span className="text-xs uppercase tracking-[0.3em] text-[#FF6A2A] font-semibold block mb-2">
+            <span className="text-xs uppercase tracking-[0.3em] text-[#FF6A2A] font-semibold block mb-2 font-mono">
               Forkframe Studio · The Infinite Dimension
             </span>
             <h1 className="text-3xl md:text-5xl lg:text-6xl font-extrabold text-[#F4F0E8] tracking-tight leading-tight">
@@ -326,37 +368,43 @@ For tailored recipe audits or digital ordering systems, open the Briefing Chambe
       {/* ======================================================== */}
       {/* SCENE 03: HIGH-SPEED 3D WARP TUNNEL                      */}
       {/* ======================================================== */}
-      {scene === 'TUNNEL' && (
-        <div className="relative z-10 min-h-screen flex flex-col justify-between items-center p-6 pt-24 pb-12 pointer-events-none">
-          <div className="text-center animate-fadeIn">
-            <span className="text-xs font-mono uppercase tracking-[0.25em] text-[#FF6A2A] block mb-1">
-              Hyper-Dimensional Passage
-            </span>
-            <span className="text-sm text-[#F4F0E8]">
-              {activeDestination ? `Accelerating to ${activeDestination.toUpperCase()}` : 'Entering Orbital Hub Rotunda'}
-            </span>
-          </div>
+      {scene === 'TUNNEL' && (() => {
+        const destMeta = activeDestination ? getDestinationById(activeDestination) : null;
+        return (
+          <div className="relative z-10 min-h-screen flex flex-col justify-between items-center p-6 pt-24 pb-12 pointer-events-none">
+            <div className="text-center animate-fadeIn max-w-xl mx-auto">
+              <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-black/70 border border-white/10 mb-3 backdrop-blur-md shadow-lg">
+                <span
+                  className="w-2.5 h-2.5 rounded-full animate-ping"
+                  style={{ backgroundColor: destMeta?.themeColor || '#FF6A2A' }}
+                />
+                <span
+                  className="text-[11px] font-mono uppercase tracking-[0.2em] font-bold"
+                  style={{ color: destMeta?.themeColor || '#FF6A2A' }}
+                >
+                  {destMeta ? `Corridor ${destMeta.number} · Dimensional Gate` : 'Hyper-Dimensional Passage'}
+                </span>
+              </div>
+              <h2 className="text-2xl sm:text-4xl font-extrabold text-[#F4F0E8] tracking-tight">
+                {destMeta ? `Accelerating to ${destMeta.title}` : 'Entering Orbital Hub Rotunda'}
+              </h2>
+              <p className="text-xs sm:text-sm text-[#A7A39B] mt-1.5 font-medium">
+                {destMeta ? destMeta.tagline : '3D Spatial Coordinate Lock Engaged'}
+              </p>
+            </div>
 
-          <div className="pointer-events-auto">
-            <button
-              onClick={() => {
-                soundEngine.playArrivalChime();
-                if (activeDestination) {
-                  setScene('TERMINAL');
-                  updateRoute(activeDestination);
-                } else {
-                  setScene('HUB');
-                  updateRoute('hub');
-                }
-              }}
-              className="px-4 py-2 text-xs font-medium text-neutral-300 hover:text-white bg-black/80 border border-white/20 rounded-xl backdrop-blur-md flex items-center gap-2 transition-all cursor-pointer"
-            >
-              <FastForward className="w-3.5 h-3.5 text-[#FF6A2A]" />
-              <span>Skip Travel</span>
-            </button>
+            <div className="pointer-events-auto">
+              <button
+                onClick={handleSkipTunnel}
+                className="px-5 py-2.5 text-xs font-semibold text-neutral-200 hover:text-white bg-black/85 border border-white/20 hover:border-[#FF6A2A] rounded-xl backdrop-blur-md flex items-center gap-2 transition-all cursor-pointer shadow-xl"
+              >
+                <FastForward className="w-3.5 h-3.5 text-[#FF6A2A]" />
+                <span>Skip Travel</span>
+              </button>
+            </div>
           </div>
-        </div>
-      )}
+        );
+      })()}
 
       {/* ======================================================== */}
       {/* SCENE 04: THE ORBITAL HUB                                */}
@@ -372,9 +420,16 @@ For tailored recipe audits or digital ordering systems, open the Briefing Chambe
           />
 
           <div className="relative z-10 min-h-screen flex flex-col justify-between p-6 pt-24 pb-10 pointer-events-none">
-            {/* Central Header */}
-            <div className="text-center animate-fadeIn max-w-xl mx-auto">
-              <span className="text-xs uppercase tracking-widest text-[#FF6A2A] font-semibold block mb-1">
+            {/* Central Header with Studio Logo Emblem */}
+            <div className="text-center animate-fadeIn max-w-xl mx-auto flex flex-col items-center">
+              <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-2xl overflow-hidden bg-black/70 border border-[#FF6A2A]/50 p-1 mb-3 shadow-[0_0_25px_rgba(255,106,42,0.35)] transition-transform hover:scale-105 pointer-events-auto">
+                <img
+                  src="/images/brand/logo.jpeg"
+                  alt="Forkframe Studio Logo"
+                  className="w-full h-full object-cover rounded-xl"
+                />
+              </div>
+              <span className="text-xs uppercase tracking-widest text-[#FF6A2A] font-semibold block mb-1 font-mono">
                 Central Navigation World
               </span>
               <h2 className="text-2xl md:text-4xl font-extrabold text-[#F4F0E8]">
@@ -501,7 +556,7 @@ For tailored recipe audits or digital ordering systems, open the Briefing Chambe
           <div className="max-w-6xl mx-auto mb-4 flex items-center justify-between text-xs text-[#A7A39B]">
             <button
               onClick={handleReturnToHub}
-              className="flex items-center gap-2 py-1.5 px-3 rounded-lg bg-white/5 hover:bg-white/10 text-white transition-colors cursor-pointer border border-white/10"
+              className="flex items-center gap-2 py-1.5 px-3 rounded-lg bg-white/5 hover:bg-white/10 text-white transition-colors cursor-pointer border border-white/10 hover:border-[#FF6A2A]/50"
             >
               <ArrowLeft className="w-3.5 h-3.5 text-[#FF6A2A]" />
               <span>Return to Orbital Hub</span>

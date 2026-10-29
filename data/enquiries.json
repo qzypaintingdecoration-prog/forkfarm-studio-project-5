@@ -1,0 +1,129 @@
+[
+  {
+    "id": "ENQ-2083",
+    "createdAt": "2026-10-29T02:31:24.704Z",
+    "clientName": "Tariq Mansoor",
+    "businessName": "Flame & Skewer Halal Smokehouse",
+    "businessType": "Restaurant",
+    "email": "tariq@flameskewer.co.uk",
+    "phone": "+44 7700 900888",
+    "serviceOfInterest": "Bespoke website design and development",
+    "projectScope": [
+      "Halal Smokehouse Portal"
+    ],
+    "budgetTier": "£12,000 - £25,000",
+    "targetLaunch": "Immediate (1-2 mo)",
+    "details": "Need Halal-first live smoker tracker and online booking.",
+    "status": "New",
+    "privacyAcknowledged": true,
+    "emailStatus": "PROVIDER_UNCONFIGURED",
+    "recipientEmail": "studioforkframe@gmail.com",
+    "emailStatusReason": "Outbound SMTP environment variables (SMTP_HOST / SMTP_USER / SMTP_PASS) not configured. Brief safely stored to database and immediately accessible in Studio Admin."
+  },
+  {
+    "id": "ENQ-5995",
+    "createdAt": "2026-10-29T02:31:01.960Z",
+    "clientName": "Hamza Tariq",
+    "businessName": "Sultan Hearth & Charcoal Grill",
+    "businessType": "Restaurant",
+    "email": "hamza@sultanhearth.co.uk",
+    "phone": "+44 7700 900555",
+    "serviceOfInterest": "Bespoke website design and development",
+    "projectScope": [
+      "Halal Gourmet Grill Portal",
+      "Click & Collect Ordering"
+    ],
+    "budgetTier": "£12,000 - £25,000",
+    "targetLaunch": "Immediate (1-2 mo)",
+    "details": "Opening our flagship 120-cover Halal charcoal grill venue in Birmingham with mocktail bar and online reservations.",
+    "status": "New",
+    "privacyAcknowledged": true
+  },
+  {
+    "id": "ENQ-3756",
+    "createdAt": "2026-10-29T02:30:43.402Z",
+    "clientName": "Hamza Tariq",
+    "businessName": "Sultan Hearth & Charcoal Grill",
+    "businessType": "Restaurant",
+    "email": "hamza@sultanhearth.co.uk",
+    "phone": "+44 7700 900555",
+    "serviceOfInterest": "Bespoke website design and development",
+    "projectScope": [
+      "Halal Gourmet Grill Portal",
+      "Click & Collect Ordering"
+    ],
+    "budgetTier": "£12,000 - £25,000",
+    "targetLaunch": "Immediate (1-2 mo)",
+    "details": "Opening our flagship 120-cover Halal charcoal grill venue in Birmingham with mocktail bar and online reservations.",
+    "status": "New",
+    "privacyAcknowledged": true
+  },
+  {
+    "id": "ENQ-3188",
+    "createdAt": "2026-10-28T01:45:19.956Z",
+    "clientName": "Gareth Davies",
+    "businessName": "The Smoked Oak",
+    "businessType": "Restaurant",
+    "email": "gareth@smokedoak.co.uk",
+    "serviceOfInterest": "Digital menu design as a paid service",
+    "projectScope": [
+      "Dynamic In-Venue QR Menu with Sommelier Engine"
+    ],
+    "budgetTier": "£6,000 - £12,000",
+    "targetLaunch": "Quarterly (2-4 mo)",
+    "details": "",
+    "status": "New",
+    "privacyAcknowledged": true
+  },
+  {
+    "id": "ENQ-8649",
+    "createdAt": "2026-10-27T01:26:19.389Z",
+    "clientName": "Test Chef",
+    "businessName": "Le Petit Test",
+    "businessType": "Restaurant",
+    "email": "chef@test.com",
+    "projectScope": [
+      "Flagship 3D Venue Experience & Website"
+    ],
+    "budgetTier": "£6,000 - £12,000",
+    "targetLaunch": "Quarterly (2-4 mo)",
+    "details": "",
+    "status": "New"
+  },
+  {
+    "id": "ENQ-7041",
+    "createdAt": "2026-10-25T13:26:03.943Z",
+    "clientName": "Julian Sterling",
+    "businessName": "L’Osteria Della Luna",
+    "businessType": "Restaurant",
+    "email": "j.sterling@losteriadellaluna.co.uk",
+    "phone": "+44 20 7946 0912",
+    "projectScope": [
+      "Immersive 3D Website",
+      "Direct Table & Private Dining Booking",
+      "Digital Menu Experience"
+    ],
+    "budgetTier": "£12,000 - £25,000",
+    "targetLaunch": "Immediate (1-2 mo)",
+    "details": "Looking to overhaul our Mayfair venue flagship online presence with dark luxury aesthetic, real-time sommelier menu pairings, and private dining bookings.",
+    "status": "In Review"
+  },
+  {
+    "id": "ENQ-6892",
+    "createdAt": "2026-10-23T13:26:03.944Z",
+    "clientName": "Amara Vance",
+    "businessName": "Kuro Matcha & Buns",
+    "businessType": "Multi-unit Chain",
+    "email": "amara@kuromatcha.com",
+    "phone": "+44 7700 900481",
+    "projectScope": [
+      "Custom Online Ordering App",
+      "Social Studio Automation",
+      "Loyalty Rewards"
+    ],
+    "budgetTier": "£25,000+",
+    "targetLaunch": "Quarterly (2-4 mo)",
+    "details": "Expanding to 4 locations in London and Manchester. Need unified click-and-collect ordering without 30% third-party aggregator commissions.",
+    "status": "Discovery Scheduled"
+  }
+]

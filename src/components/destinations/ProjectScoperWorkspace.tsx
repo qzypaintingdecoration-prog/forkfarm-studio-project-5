@@ -66,8 +66,8 @@ const SCOPE_OPTIONS: ScopeOption[] = [
   {
     id: 'dynamic-menu-qr',
     category: 'menu',
-    name: 'Dynamic In-Venue QR Menu with Sommelier Engine',
-    description: 'Real-time multi-lingual digital menu with tasting notes, dietary filtering, and cellar vintages.',
+    name: 'Dynamic In-Venue QR Menu with Halal & Allergen Filters',
+    description: 'Real-time multi-lingual digital menu with tasting notes, Natasha’s law allergen filtering, and botanical mocktail pairings.',
     basePrice: 1400,
     estimatedWeeks: 1.5
   },

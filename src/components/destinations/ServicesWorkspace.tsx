@@ -37,7 +37,7 @@ const SERVICES_CATALOG: ServiceExhibit[] = [
       'Rich multi-lingual menu displays with dietary filters'
     ],
     idealFor: 'Fine dining, destination eateries, and culinary groups aiming for unforgettable brand presence',
-    image: '/images/forge/01_bespoke_restaurant_web.svg',
+    image: '/images/services/01_bespoke_web.jpg',
     icon: Globe
   },
   {
@@ -55,7 +55,7 @@ const SERVICES_CATALOG: ServiceExhibit[] = [
       'Monthly traffic, booking & online ordering analytics review'
     ],
     idealFor: 'Busy venue managers and head chefs who lack time to maintain websites',
-    image: '/images/forge/02_continuous_web_management.svg',
+    image: '/images/services/02_web_management.jpg',
     icon: Settings
   },
   {
@@ -65,15 +65,15 @@ const SERVICES_CATALOG: ServiceExhibit[] = [
     category: 'In-Venue Operations',
     isPaid: true,
     pricingNote: 'One-off or Tiered Menu Service',
-    summary: 'High-craft digital menus designed to tantalize guest appetites. Rich food photography framing, sommelier cellar pairings, allergen disclosures, and instant price adjustments without reprinting costs.',
+    summary: 'High-craft digital menus designed to tantalize guest appetites. Rich food photography framing, specialty mocktail & beverage pairings, allergen disclosures, and instant price adjustments without reprinting costs.',
     deliverables: [
       'Mobile-first responsive layout with category navigation',
       'High-resolution dish photography & signature callouts',
       'Strict 14-allergen UK Food Standards Agency compliance',
-      'Sommelier vintage notes & cocktail recipe highlights'
+      'Artisanal botanical mocktail notes & signature beverage highlights'
     ],
-    idealFor: 'Venues with seasonal, rotating, or wine-forward menus',
-    image: '/images/forge/03_digital_qr_menu_system.svg',
+    idealFor: 'Venues with seasonal, rotating, or craft beverage & tasting menus',
+    image: '/images/services/03_digital_qr_menu.jpg',
     icon: UtensilsCrossed
   },
   {
@@ -91,7 +91,7 @@ const SERVICES_CATALOG: ServiceExhibit[] = [
       'Matching bill presenter cards & table talkers'
     ],
     idealFor: 'Venues opening new locations or undergoing seasonal identity refreshes',
-    image: '/images/forge/04_luxury_print_menus.svg',
+    image: '/images/services/04_luxury_print_menus.jpg',
     icon: Printer
   },
   {
@@ -109,7 +109,7 @@ const SERVICES_CATALOG: ServiceExhibit[] = [
       'Customer account wallet with re-order in under 15 seconds'
     ],
     idealFor: 'High-volume takeaways, ghost kitchens, and multi-unit hospitality operators',
-    image: '/images/forge/05_direct_food_ordering_app.svg',
+    image: '/images/services/05_food_ordering_apps.jpg',
     icon: Smartphone
   },
   {
@@ -127,7 +127,7 @@ const SERVICES_CATALOG: ServiceExhibit[] = [
       'High-converting promotional copy guidelines'
     ],
     idealFor: 'Hospitality brands looking to consistently fill covers across mid-week trading',
-    image: '/images/forge/06_social_studio_creative_engine.svg',
+    image: '/images/services/06_social_studio.jpg',
     icon: Sparkles
   },
   {
@@ -145,7 +145,7 @@ const SERVICES_CATALOG: ServiceExhibit[] = [
       'Follow-up summary document with recommended priorities'
     ],
     idealFor: 'Independent restaurateurs and takeaway owners exploring their digital options',
-    image: '/images/forge/07_free_advisory_audit.svg',
+    image: '/images/services/07_free_guidance.jpg',
     icon: Compass
   },
   {
@@ -163,7 +163,7 @@ const SERVICES_CATALOG: ServiceExhibit[] = [
       'POS terminal sync (Lightspeed, Square, Clover, Toast)'
     ],
     idealFor: 'High-speed prep kitchens and multi-station restaurants',
-    image: '/images/forge/08_kitchen_display_integration.svg',
+    image: '/images/services/08_kitchen_display.jpg',
     icon: MonitorDot
   },
   {
@@ -181,7 +181,7 @@ const SERVICES_CATALOG: ServiceExhibit[] = [
       'Staff training documentation on digital allergen checks'
     ],
     idealFor: 'All UK food service operators complying with Natasha’s Law',
-    image: '/images/forge/09_allergen_compliance_engine.svg',
+    image: '/images/services/09_allergen_compliance.jpg',
     icon: ShieldCheck
   },
   {
@@ -199,7 +199,7 @@ const SERVICES_CATALOG: ServiceExhibit[] = [
       'Priority access to new experimental web & 3D features'
     ],
     idealFor: 'Flagship venues and multi-site hospitality founders',
-    image: '/images/forge/10_continuous_support_workflow.svg',
+    image: '/images/services/10_continuous_support.jpg',
     icon: CheckCircle2
   }
 ];

@@ -8,16 +8,16 @@ interface StudioObservatoryWorkspaceProps {
 }
 
 const OBSERVATORY_EXHIBITS = [
-  { id: '01', title: 'Founding Monolith', desc: 'Crafting digital universes tailored exclusively to culinary brands', img: '/images/observatory/01_founding_philosophy_monolith.svg' },
-  { id: '02', title: 'Culinary DNA', desc: '100% specialized focus on food, drink, and hospitality operators', img: '/images/observatory/02_food_and_beverage_specialization.svg' },
-  { id: '03', title: 'Spatial & Sensory Design', desc: 'Capturing venue lighting, ambient intimacy, and tactile physical atmosphere', img: '/images/observatory/03_spatial_and_sensory_design.svg' },
-  { id: '04', title: 'Unit Economics First', desc: 'Protecting net margin, prime cost ratios, and cover revenue', img: '/images/observatory/04_unit_economics_first.svg' },
-  { id: '05', title: 'Zero Bloat Code', desc: '60 FPS bespoke WebGL and modern reactive frameworks without heavy plugins', img: '/images/observatory/05_zero_bloat_code_architecture.svg' },
-  { id: '06', title: 'Restaurateur Relationship', desc: 'Direct access to senior creative technologists, never junior account handlers', img: '/images/observatory/06_direct_restaurateur_relationship.svg' },
-  { id: '07', title: 'UK Hospitality Standards', desc: 'Full alignment with Natasha’s Law allergen rules and UK VAT structures', img: '/images/observatory/07_uk_hospitality_standards.svg' },
-  { id: '08', title: 'Sustainable Systems', desc: 'Cloud infrastructure engineered to scale smoothly during Friday evening rushes', img: '/images/observatory/08_sustainable_digital_infrastructure.svg' },
-  { id: '09', title: 'Bespoke vs Generic', desc: 'Why cookie-cutter templates destroy dining room brand equity and pricing power', img: '/images/observatory/09_bespoke_vs_template_analysis.svg' },
-  { id: '10', title: 'Operational SLA', desc: 'Continuous weekly maintenance, rapid price edits, and weekend uptime protection', img: '/images/observatory/10_long_term_operational_partnership.svg' }
+  { id: '01', title: 'Founding Monolith', desc: 'Crafting digital universes tailored exclusively to culinary brands', img: '/images/observatory/01_founding_philosophy_monolith.jpg' },
+  { id: '02', title: 'Culinary DNA', desc: '100% specialized focus on food, drink, and hospitality operators', img: '/images/observatory/02_food_and_beverage_specialization.jpg' },
+  { id: '03', title: 'Spatial & Sensory Design', desc: 'Capturing venue lighting, ambient intimacy, and tactile physical atmosphere', img: '/images/observatory/03_spatial_and_sensory_design.jpg' },
+  { id: '04', title: 'Unit Economics First', desc: 'Protecting net margin, prime cost ratios, and cover revenue', img: '/images/observatory/04_unit_economics_first.jpg' },
+  { id: '05', title: 'Zero Bloat Code', desc: '60 FPS bespoke WebGL and modern reactive frameworks without heavy plugins', img: '/images/observatory/05_zero_bloat_code_architecture.jpg' },
+  { id: '06', title: 'Restaurateur Relationship', desc: 'Direct access to senior creative technologists, never junior account handlers', img: '/images/observatory/06_direct_restaurateur_relationship.jpg' },
+  { id: '07', title: 'UK Hospitality Standards', desc: 'Full alignment with Natasha’s Law allergen rules and UK VAT structures', img: '/images/observatory/07_uk_hospitality_standards.jpg' },
+  { id: '08', title: 'Sustainable Systems', desc: 'Cloud infrastructure engineered to scale smoothly during Friday evening rushes', img: '/images/observatory/08_sustainable_digital_infrastructure.jpg' },
+  { id: '09', title: 'Bespoke vs Generic', desc: 'Why cookie-cutter templates destroy dining room brand equity and pricing power', img: '/images/observatory/09_bespoke_vs_template_analysis.jpg' },
+  { id: '10', title: 'Operational SLA', desc: 'Continuous weekly maintenance, rapid price edits, and weekend uptime protection', img: '/images/observatory/10_long_term_operational_partnership.jpg' }
 ];
 
 export const StudioObservatoryWorkspace: React.FC<StudioObservatoryWorkspaceProps> = ({
@@ -64,7 +64,7 @@ export const StudioObservatoryWorkspace: React.FC<StudioObservatoryWorkspaceProp
           </div>
           <h3 className="text-xl font-bold text-[#F4F0E8]">Who We Serve</h3>
           <p className="text-xs md:text-sm text-[#A7A39B] leading-relaxed">
-            We partner with independent restaurateurs, artisan bakeries, cocktail lounges, cloud kitchen operators, fast-casual takeaways, and growing hospitality groups across the United Kingdom who want to build a distinctive brand and protect their operating margins.
+            We partner with independent restaurateurs, artisan bakeries, gourmet lounges & juice bars, cloud kitchen operators, fast-casual takeaways, and growing hospitality groups across the United Kingdom who want to build a distinctive brand and protect their operating margins.
           </p>
         </div>
 

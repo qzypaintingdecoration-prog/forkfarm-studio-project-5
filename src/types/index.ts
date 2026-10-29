@@ -93,7 +93,7 @@ export interface ClientEnquiry {
   createdAt: string;
   clientName: string;
   businessName: string;
-  businessType: 'Restaurant' | 'Bar & Lounge' | 'Cloud Kitchen' | 'Multi-unit Chain' | 'Artisanal Bakery' | 'Gourmet Food Brand' | 'Takeaway & Fast Casual';
+  businessType: 'Restaurant' | 'Gourmet Lounge' | 'Cloud Kitchen' | 'Multi-unit Chain' | 'Artisanal Bakery' | 'Gourmet Food Brand' | 'Takeaway & Fast Casual';
   email: string;
   phone?: string;
   serviceOfInterest: string;
@@ -103,4 +103,7 @@ export interface ClientEnquiry {
   details: string;
   status: 'New' | 'In Review' | 'Discovery Scheduled' | 'Proposal Sent';
   privacyAcknowledged: boolean;
+  emailStatus?: 'SENT' | 'PROVIDER_UNCONFIGURED' | 'FAILED';
+  emailStatusReason?: string;
+  recipientEmail?: string;
 }

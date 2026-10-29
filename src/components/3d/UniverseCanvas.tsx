@@ -38,9 +38,14 @@ export const UniverseCanvas: React.FC<UniverseCanvasProps> = ({
   });
 
   useEffect(() => {
+    const prevScene = stateRef.current.scene;
     stateRef.current.scene = scene;
     stateRef.current.activeDestination = activeDestination;
     stateRef.current.reducedMotion = reducedMotion;
+
+    if (scene === 'TUNNEL' && prevScene !== 'TUNNEL') {
+      stateRef.current.tunnelZ = 0;
+    }
   }, [scene, activeDestination, reducedMotion]);
 
   useEffect(() => {
@@ -506,22 +511,22 @@ export const UniverseCanvas: React.FC<UniverseCanvasProps> = ({
       // Draw official logo image when loaded
       if (logoLoaded && logoImg.complete) {
         try {
-          const logoSize = 100;
+          const logoSize = 135;
           screenCtx.save();
           // Subtle circular frame
           screenCtx.beginPath();
-          screenCtx.arc(cx, cy - 15, logoSize / 2, 0, Math.PI * 2);
+          screenCtx.arc(cx, cy - 18, logoSize / 2, 0, Math.PI * 2);
           screenCtx.fillStyle = '#101113';
           screenCtx.fill();
           screenCtx.clip();
-          screenCtx.drawImage(logoImg, cx - logoSize / 2, cy - 15 - logoSize / 2, logoSize, logoSize);
+          screenCtx.drawImage(logoImg, cx - logoSize / 2, cy - 18 - logoSize / 2, logoSize, logoSize);
           screenCtx.restore();
 
           // Border ring around logo
           screenCtx.beginPath();
-          screenCtx.arc(cx, cy - 15, logoSize / 2 + 2, 0, Math.PI * 2);
+          screenCtx.arc(cx, cy - 18, logoSize / 2 + 2, 0, Math.PI * 2);
           screenCtx.strokeStyle = '#FF6A2A';
-          screenCtx.lineWidth = 2;
+          screenCtx.lineWidth = 2.5;
           screenCtx.stroke();
         } catch (e) {
           // ignore drawImage errors
@@ -562,14 +567,29 @@ export const UniverseCanvas: React.FC<UniverseCanvasProps> = ({
       } else if (curScene === 'TUNNEL') {
         deskGroup.visible = false;
         tunnelGroup.visible = true;
-        hubGroup.visible = true;
+        hubGroup.visible = false;
 
-        const warpSpeed = stateRef.current.reducedMotion ? 40 : 130;
+        // Distinct entrance identities per destination
+        const targetMeta = stateRef.current.activeDestination 
+          ? DESTINATIONS.find(d => d.id === stateRef.current.activeDestination)
+          : null;
+
+        if (targetMeta) {
+          emberRingMat.color.set(targetMeta.themeColor);
+          emberRailMat.color.set(targetMeta.themeColor);
+          particleMat.color.set(targetMeta.themeColor);
+        } else {
+          emberRingMat.color.set(0xff6a2a);
+          emberRailMat.color.set(0xff6a2a);
+          particleMat.color.set(0xffa366);
+        }
+
+        const warpSpeed = stateRef.current.reducedMotion ? 45 : 140;
         stateRef.current.tunnelZ -= delta * warpSpeed;
 
         camera.position.set(
-          Math.sin(elapsed * 3) * (stateRef.current.reducedMotion ? 0.04 : 0.2),
-          Math.cos(elapsed * 4) * (stateRef.current.reducedMotion ? 0.04 : 0.2),
+          Math.sin(elapsed * 4) * (stateRef.current.reducedMotion ? 0.04 : 0.2),
+          Math.cos(elapsed * 5) * (stateRef.current.reducedMotion ? 0.04 : 0.2),
           stateRef.current.tunnelZ
         );
         camera.lookAt(0, 0, stateRef.current.tunnelZ - 30);

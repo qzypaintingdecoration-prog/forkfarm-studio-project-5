@@ -1,5 +1,64 @@
 [
   {
+    "id": "ENQ-2083",
+    "createdAt": "2026-10-29T02:31:24.704Z",
+    "clientName": "Tariq Mansoor",
+    "businessName": "Flame & Skewer Halal Smokehouse",
+    "businessType": "Restaurant",
+    "email": "tariq@flameskewer.co.uk",
+    "phone": "+44 7700 900888",
+    "serviceOfInterest": "Bespoke website design and development",
+    "projectScope": [
+      "Halal Smokehouse Portal"
+    ],
+    "budgetTier": "£12,000 - £25,000",
+    "targetLaunch": "Immediate (1-2 mo)",
+    "details": "Need Halal-first live smoker tracker and online booking.",
+    "status": "New",
+    "privacyAcknowledged": true,
+    "emailStatus": "PROVIDER_UNCONFIGURED",
+    "recipientEmail": "studioforkframe@gmail.com",
+    "emailStatusReason": "Outbound SMTP environment variables (SMTP_HOST / SMTP_USER / SMTP_PASS) not configured. Brief safely stored to database and immediately accessible in Studio Admin."
+  },
+  {
+    "id": "ENQ-5995",
+    "createdAt": "2026-10-29T02:31:01.960Z",
+    "clientName": "Hamza Tariq",
+    "businessName": "Sultan Hearth & Charcoal Grill",
+    "businessType": "Restaurant",
+    "email": "hamza@sultanhearth.co.uk",
+    "phone": "+44 7700 900555",
+    "serviceOfInterest": "Bespoke website design and development",
+    "projectScope": [
+      "Halal Gourmet Grill Portal",
+      "Click & Collect Ordering"
+    ],
+    "budgetTier": "£12,000 - £25,000",
+    "targetLaunch": "Immediate (1-2 mo)",
+    "details": "Opening our flagship 120-cover Halal charcoal grill venue in Birmingham with mocktail bar and online reservations.",
+    "status": "New",
+    "privacyAcknowledged": true
+  },
+  {
+    "id": "ENQ-3756",
+    "createdAt": "2026-10-29T02:30:43.402Z",
+    "clientName": "Hamza Tariq",
+    "businessName": "Sultan Hearth & Charcoal Grill",
+    "businessType": "Restaurant",
+    "email": "hamza@sultanhearth.co.uk",
+    "phone": "+44 7700 900555",
+    "serviceOfInterest": "Bespoke website design and development",
+    "projectScope": [
+      "Halal Gourmet Grill Portal",
+      "Click & Collect Ordering"
+    ],
+    "budgetTier": "£12,000 - £25,000",
+    "targetLaunch": "Immediate (1-2 mo)",
+    "details": "Opening our flagship 120-cover Halal charcoal grill venue in Birmingham with mocktail bar and online reservations.",
+    "status": "New",
+    "privacyAcknowledged": true
+  },
+  {
     "id": "ENQ-3188",
     "createdAt": "2026-10-28T01:45:19.956Z",
     "clientName": "Gareth Davies",

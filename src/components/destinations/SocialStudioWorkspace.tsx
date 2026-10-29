@@ -6,6 +6,7 @@ interface TemplateOption {
   id: string;
   name: string;
   category: string;
+  format: '1:1' | '9:16';
   defaultHeadline: string;
   defaultSubtitle: string;
   defaultBadge: string;
@@ -23,136 +24,280 @@ interface CanvasState {
   accent: string;
 }
 
-const TEMPLATES: TemplateOption[] = [
+const POST_TEMPLATES_1X1: TemplateOption[] = [
   {
-    id: 'burger',
+    id: 'post-burger',
     name: 'Wagyu Burger & Brew',
     category: 'Gourmet Casual',
+    format: '1:1',
     defaultHeadline: 'SMOKED WAGYU TASTING',
     defaultSubtitle: 'Truffle aioli · aged red Leicester · toasted brioche',
     defaultBadge: 'CHEF’S SPECIAL',
     defaultPrice: '£16.50',
     bgGradient: ['#1c130c', '#080604'],
     accent: '#FF6A2A',
-    image: '/images/social-studio/01_social_wagyu_burger.svg'
+    image: '/images/social/posts/post_01_wagyu_burger.jpg'
   },
   {
-    id: 'pizza',
+    id: 'post-pizza',
     name: 'Artisan Neapolitan',
     category: 'Pizzeria',
+    format: '1:1',
     defaultHeadline: '48-HR FERMENTED CRUST',
     defaultSubtitle: 'San Marzano DOP · fior di latte · wild oregano',
     defaultBadge: 'WOOD-FIRED DAILY',
     defaultPrice: '£14.00',
     bgGradient: ['#230f0f', '#090505'],
     accent: '#ef4444',
-    image: '/images/social-studio/02_social_neapolitan_pizza.svg'
+    image: '/images/social/posts/post_02_artisan_pizza.jpg'
   },
   {
-    id: 'omakase',
+    id: 'post-omakase',
     name: 'Omakase & Raw Bar',
     category: 'Fine Dining',
+    format: '1:1',
     defaultHeadline: 'AUTUMN NIGIRI DROP',
     defaultSubtitle: 'Bluefin otoro · hokkaido uni · caviar garnish',
     defaultBadge: 'LIMITED 20 COVERS',
     defaultPrice: '£85.00',
     bgGradient: ['#0f172a', '#040711'],
     accent: '#38bdf8',
-    image: '/images/social-studio/03_social_omakase_nigiri.svg'
+    image: '/images/social/posts/post_03_omakase_nigiri.jpg'
   },
   {
-    id: 'pasta',
+    id: 'post-pasta',
     name: 'Handmade Pasta',
     category: 'Italian Osteria',
+    format: '1:1',
     defaultHeadline: 'TRUFFLE TAGLIOLINI',
     defaultSubtitle: 'Hand-rolled egg yolk pasta · 36-mo parmigiano',
     defaultBadge: 'FRESH TODAY',
     defaultPrice: '£22.00',
     bgGradient: ['#1e1b18', '#070605'],
     accent: '#C8A879',
-    image: '/images/social-studio/04_social_truffle_pasta.svg'
+    image: '/images/social/posts/post_04_truffle_pasta.jpg'
   },
   {
-    id: 'brunch',
+    id: 'post-brunch',
     name: 'Weekend Brunch Drop',
     category: 'Café & Bakery',
+    format: '1:1',
     defaultHeadline: 'SIGNATURE BRUNCH',
     defaultSubtitle: 'Poached eggs · sourdough · house cured gravlax',
     defaultBadge: 'SAT & SUN ONLY',
     defaultPrice: '£15.00',
     bgGradient: ['#141c19', '#050a08'],
     accent: '#34d399',
-    image: '/images/social-studio/05_social_weekend_brunch.svg'
+    image: '/images/social/posts/post_05_weekend_brunch.jpg'
   },
   {
-    id: 'cocktail',
-    name: 'Aperitivo & Spritz Hour',
-    category: 'Cocktail Bar',
-    defaultHeadline: 'GOLDEN HOUR SPRITZ',
-    defaultSubtitle: 'Blood orange botanical bitters · prosecco DOCG',
-    defaultBadge: '5PM - 7PM DAILY',
-    defaultPrice: '2 FOR £18',
+    id: 'post-cooler',
+    name: 'Botanical Citrus Cooler',
+    category: 'Mocktail & Juice Bar',
+    format: '1:1',
+    defaultHeadline: 'BOTANICAL CITRUS DROP',
+    defaultSubtitle: 'Cold-pressed blood orange · crushed mint · passionfruit spritz',
+    defaultBadge: 'FRESH PRESSED DAILY',
+    defaultPrice: '2 FOR £12',
     bgGradient: ['#231505', '#0c0702'],
     accent: '#f97316',
-    image: '/images/social-studio/06_social_cocktail_happy_hour.svg'
+    image: '/images/social/posts/post_06_botanical_cooler.jpg'
   },
   {
-    id: 'roast',
-    name: 'Heritage Sunday Roast',
-    category: 'Gastro-Pub & Carvery',
+    id: 'post-roast',
+    name: 'Heritage Artisan Roast',
+    category: 'Artisan Carvery & Grill',
+    format: '1:1',
     defaultHeadline: 'SLOW-ROASTED BEEF',
-    defaultSubtitle: 'Giant Yorkshire pudding · bone marrow gravy',
+    defaultSubtitle: 'Giant Yorkshire pudding · bone marrow & rosemary jus',
     defaultBadge: 'EVERY SUNDAY',
     defaultPrice: '£24.50',
     bgGradient: ['#1c1208', '#080502'],
     accent: '#d97706',
-    image: '/images/social-studio/07_social_sunday_roast.svg'
+    image: '/images/social/posts/post_07_sunday_roast.jpg'
   },
   {
-    id: 'dessert',
+    id: 'post-dessert',
     name: 'Artisan Pâtisserie Drop',
     category: 'Bakery & Dessert Bar',
+    format: '1:1',
     defaultHeadline: 'PISTACHIO CHOUX',
     defaultSubtitle: 'Bronte pistachio praline · white chocolate cream',
     defaultBadge: 'LIMITED BATCH',
     defaultPrice: '£7.80',
     bgGradient: ['#121b18', '#040907'],
     accent: '#10b981',
-    image: '/images/social-studio/08_social_dessert_drop.svg'
+    image: '/images/social/posts/post_08_artisan_dessert.jpg'
   },
   {
-    id: 'tasting',
+    id: 'post-tasting',
     name: 'Head Chef Secret Tasting',
     category: 'Tasting Room',
+    format: '1:1',
     defaultHeadline: '7-COURSE SURPRISE',
-    defaultSubtitle: 'Seasonal British game · foraging pairings',
+    defaultSubtitle: 'Seasonal heritage produce · botanical infusions',
     defaultBadge: 'PRIVATE TABLE',
     defaultPrice: '£95.00',
     bgGradient: ['#181528', '#06050e'],
     accent: '#a855f7',
-    image: '/images/social-studio/09_social_limited_tasting.svg'
+    image: '/images/social/posts/post_09_secret_tasting.jpg'
   },
   {
-    id: 'wine',
-    name: 'Sommelier Wine Flight',
-    category: 'Cellar & Wine Bar',
-    defaultHeadline: 'PIEDMONT DISCOVERY',
-    defaultSubtitle: 'Barolo DOCG · Barbera d’Alba · artisan cheeses',
-    defaultBadge: 'CELLAR SELECT',
-    defaultPrice: '£38.00',
+    id: 'post-peri-peri',
+    name: 'Flame-Grilled Peri-Peri Feast',
+    category: 'Halal Gourmet Grill',
+    format: '1:1',
+    defaultHeadline: 'PERI-PERI PLATTER',
+    defaultSubtitle: 'Charcoal-grilled half chicken · spiced skin-on fries · garlic toum',
+    defaultBadge: '100% HALAL GRILL',
+    defaultPrice: '£18.50',
     bgGradient: ['#1e0e16', '#090306'],
     accent: '#f43f5e',
-    image: '/images/social-studio/10_social_wine_pairing.svg'
+    image: '/images/social/posts/post_10_peri_peri_grill.jpg'
+  }
+];
+
+const STORY_TEMPLATES_9X16: TemplateOption[] = [
+  {
+    id: 'story-burger',
+    name: 'Smoked Wagyu Vertical Drop',
+    category: 'Gourmet Casual',
+    format: '9:16',
+    defaultHeadline: 'SMOKED WAGYU',
+    defaultSubtitle: 'Double patty · bone marrow butter · toasted brioche',
+    defaultBadge: 'STORY FLASH DEAL',
+    defaultPrice: '£16.50',
+    bgGradient: ['#1c130c', '#080604'],
+    accent: '#FF6A2A',
+    image: '/images/social/stories/story_01_wagyu_burger.jpg'
+  },
+  {
+    id: 'story-pizza',
+    name: 'Wood-Fired Pizza Story',
+    category: 'Pizzeria',
+    format: '9:16',
+    defaultHeadline: 'NAPOLI SPECIAL',
+    defaultSubtitle: 'Slow fermented dough · burrata pugliese · spicy nduja',
+    defaultBadge: 'HOT FROM OVEN',
+    defaultPrice: '£15.00',
+    bgGradient: ['#230f0f', '#090505'],
+    accent: '#ef4444',
+    image: '/images/social/stories/story_02_artisan_pizza.jpg'
+  },
+  {
+    id: 'story-omakase',
+    name: 'Omakase Counter Story',
+    category: 'Fine Dining',
+    format: '9:16',
+    defaultHeadline: 'CHEF NIGIRI',
+    defaultSubtitle: 'Wild yellowtail · shiso leaf · 10-year aged soy glaze',
+    defaultBadge: 'LAST 4 SEATS',
+    defaultPrice: '£90.00',
+    bgGradient: ['#0f172a', '#040711'],
+    accent: '#38bdf8',
+    image: '/images/social/stories/story_03_omakase_nigiri.jpg'
+  },
+  {
+    id: 'story-pasta',
+    name: 'Fresh Tagliatelle Reel',
+    category: 'Italian Osteria',
+    format: '9:16',
+    defaultHeadline: 'HAND-CUT PASTA',
+    defaultSubtitle: 'Slow braised wild boar ragù · 30-month pecorino',
+    defaultBadge: 'LUNCH RUSH',
+    defaultPrice: '£19.50',
+    bgGradient: ['#1e1b18', '#070605'],
+    accent: '#C8A879',
+    image: '/images/social/stories/story_04_truffle_pasta.jpg'
+  },
+  {
+    id: 'story-brunch',
+    name: 'Weekend Sourdough Story',
+    category: 'Café & Bakery',
+    format: '9:16',
+    defaultHeadline: 'CHEF BRUNCH',
+    defaultSubtitle: 'Avocado tartine · runny yolk · heritage dukka seed',
+    defaultBadge: 'WALK-INS WELCOME',
+    defaultPrice: '£14.50',
+    bgGradient: ['#141c19', '#050a08'],
+    accent: '#34d399',
+    image: '/images/social/stories/story_05_weekend_brunch.jpg'
+  },
+  {
+    id: 'story-cooler',
+    name: 'Botanical Passion Cooler Story',
+    category: 'Mocktail & Juice Bar',
+    format: '9:16',
+    defaultHeadline: 'PASSION CRUSH',
+    defaultSubtitle: 'Muddled blood orange · infused sparkling botanicals · crushed rock ice',
+    defaultBadge: 'AFTERNOON REFRESH',
+    defaultPrice: '£6.50',
+    bgGradient: ['#231505', '#0c0702'],
+    accent: '#f97316',
+    image: '/images/social/stories/story_06_botanical_cooler.jpg'
+  },
+  {
+    id: 'story-roast',
+    name: 'Heritage Artisan Feast Vertical',
+    category: 'Artisan Carvery & Grill',
+    format: '9:16',
+    defaultHeadline: 'PRIME RIB ROAST',
+    defaultSubtitle: 'Dripping roasties · charred hispi · rosemary herb jus',
+    defaultBadge: 'SUNDAY TABLE',
+    defaultPrice: '£26.00',
+    bgGradient: ['#1c1208', '#080502'],
+    accent: '#d97706',
+    image: '/images/social/stories/story_07_sunday_roast.jpg'
+  },
+  {
+    id: 'story-dessert',
+    name: 'Pâtisserie Showcase Story',
+    category: 'Bakery & Dessert Bar',
+    format: '9:16',
+    defaultHeadline: 'PARISIAN CHOUX',
+    defaultSubtitle: 'Caramelized hazelnut crunch · dark valrhona ganache',
+    defaultBadge: 'FRESH BATCH',
+    defaultPrice: '£8.50',
+    bgGradient: ['#121b18', '#040907'],
+    accent: '#10b981',
+    image: '/images/social/stories/story_08_artisan_dessert.jpg'
+  },
+  {
+    id: 'story-tasting',
+    name: 'Exclusive Tasting Room',
+    category: 'Tasting Room',
+    format: '9:16',
+    defaultHeadline: 'SECRET TASTING',
+    defaultSubtitle: '7 seasonal pairings · candlelit private chef dining studio',
+    defaultBadge: 'BOOK THIS WEEK',
+    defaultPrice: '£110.00',
+    bgGradient: ['#181528', '#06050e'],
+    accent: '#a855f7',
+    image: '/images/social/stories/story_09_secret_tasting.jpg'
+  },
+  {
+    id: 'story-peri-peri',
+    name: 'Flame-Grilled Skewer Story',
+    category: 'Halal Gourmet Grill',
+    format: '9:16',
+    defaultHeadline: 'CHARCOAL SKEWER',
+    defaultSubtitle: 'Smoked paprika marinade · charred sweetcorn · house peri glaze',
+    defaultBadge: 'GRILL MASTER PICK',
+    defaultPrice: '£14.00',
+    bgGradient: ['#1e0e16', '#090306'],
+    accent: '#f43f5e',
+    image: '/images/social/stories/story_10_peri_peri_grill.jpg'
   }
 ];
 
 export const SocialStudioWorkspace: React.FC = () => {
-  const [selectedTemplate, setSelectedTemplate] = useState<TemplateOption>(TEMPLATES[0]);
-  const [headline, setHeadline] = useState(TEMPLATES[0].defaultHeadline);
-  const [subtitle, setSubtitle] = useState(TEMPLATES[0].defaultSubtitle);
-  const [badge, setBadge] = useState(TEMPLATES[0].defaultBadge);
-  const [price, setPrice] = useState(TEMPLATES[0].defaultPrice);
-  const [accentColor, setAccentColor] = useState(TEMPLATES[0].accent);
+  const [presetCategory, setPresetCategory] = useState<'1:1' | '9:16'>('1:1');
+  const [selectedTemplate, setSelectedTemplate] = useState<TemplateOption>(POST_TEMPLATES_1X1[0]);
+  const [headline, setHeadline] = useState(POST_TEMPLATES_1X1[0].defaultHeadline);
+  const [subtitle, setSubtitle] = useState(POST_TEMPLATES_1X1[0].defaultSubtitle);
+  const [badge, setBadge] = useState(POST_TEMPLATES_1X1[0].defaultBadge);
+  const [price, setPrice] = useState(POST_TEMPLATES_1X1[0].defaultPrice);
+  const [accentColor, setAccentColor] = useState(POST_TEMPLATES_1X1[0].accent);
   const [presetFormat, setPresetFormat] = useState<'1:1' | '9:16' | 'custom'>('1:1');
   const [customWidth, setCustomWidth] = useState(1200);
   const [customHeight, setCustomHeight] = useState(630);
@@ -163,11 +308,11 @@ export const SocialStudioWorkspace: React.FC = () => {
   // History stack for Undo / Redo
   const [history, setHistory] = useState<CanvasState[]>([
     {
-      headline: TEMPLATES[0].defaultHeadline,
-      subtitle: TEMPLATES[0].defaultSubtitle,
-      badge: TEMPLATES[0].defaultBadge,
-      price: TEMPLATES[0].defaultPrice,
-      accent: TEMPLATES[0].accent
+      headline: POST_TEMPLATES_1X1[0].defaultHeadline,
+      subtitle: POST_TEMPLATES_1X1[0].defaultSubtitle,
+      badge: POST_TEMPLATES_1X1[0].defaultBadge,
+      price: POST_TEMPLATES_1X1[0].defaultPrice,
+      accent: POST_TEMPLATES_1X1[0].accent
     }
   ]);
   const [historyIndex, setHistoryIndex] = useState(0);
@@ -211,11 +356,13 @@ export const SocialStudioWorkspace: React.FC = () => {
   const handleSelectTemplate = (tpl: TemplateOption) => {
     soundEngine.playSelectClick();
     setSelectedTemplate(tpl);
+    setPresetFormat(tpl.format);
     setHeadline(tpl.defaultHeadline);
     setSubtitle(tpl.defaultSubtitle);
     setBadge(tpl.defaultBadge);
     setPrice(tpl.defaultPrice);
     setAccentColor(tpl.accent);
+    loadStudioPhoto(tpl.image);
     pushState({
       headline: tpl.defaultHeadline,
       subtitle: tpl.defaultSubtitle,
@@ -224,6 +371,11 @@ export const SocialStudioWorkspace: React.FC = () => {
       accent: tpl.accent
     });
   };
+
+  // Auto-load default template photo on initial render
+  useEffect(() => {
+    loadStudioPhoto(POST_TEMPLATES_1X1[0].image);
+  }, []);
 
   const handleImageUpload = (e: React.ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0];
@@ -726,12 +878,47 @@ export const SocialStudioWorkspace: React.FC = () => {
             </div>
           )}
 
-          {/* Tab 3: Presets (10 Visual Culinary Drop Templates) */}
+          {/* Tab 3: Presets (1:1 Posts and 9:16 Stories) */}
           {activeTab === 'presets' && (
             <div className="space-y-3">
-              <span className="text-xs text-[#A7A39B]">Select from 10 verified culinary drop designs:</span>
+              {/* Category Selector */}
+              <div className="flex items-center gap-2 p-1 bg-black/40 rounded-xl border border-white/10">
+                <button
+                  onClick={() => {
+                    soundEngine.playSelectClick();
+                    setPresetCategory('1:1');
+                  }}
+                  className={`flex-1 py-1.5 px-3 rounded-lg text-xs font-semibold transition-all cursor-pointer ${
+                    presetCategory === '1:1'
+                      ? 'bg-[#FF6A2A] text-black shadow-md'
+                      : 'text-[#A7A39B] hover:text-white'
+                  }`}
+                >
+                  1:1 Post Presets (10)
+                </button>
+                <button
+                  onClick={() => {
+                    soundEngine.playSelectClick();
+                    setPresetCategory('9:16');
+                  }}
+                  className={`flex-1 py-1.5 px-3 rounded-lg text-xs font-semibold transition-all cursor-pointer ${
+                    presetCategory === '9:16'
+                      ? 'bg-[#FF6A2A] text-black shadow-md'
+                      : 'text-[#A7A39B] hover:text-white'
+                  }`}
+                >
+                  9:16 Story Presets (10)
+                </button>
+              </div>
+
+              <span className="text-xs text-[#A7A39B] block">
+                {presetCategory === '1:1'
+                  ? 'Showing 10 verified 1:1 square feed presets with ultra-HD photography:'
+                  : 'Showing 10 verified 9:16 vertical story presets with full-bleed photography:'}
+              </span>
+
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 max-h-[500px] overflow-y-auto pr-1">
-                {TEMPLATES.map((tpl) => (
+                {(presetCategory === '1:1' ? POST_TEMPLATES_1X1 : STORY_TEMPLATES_9X16).map((tpl) => (
                   <button
                     key={tpl.id}
                     onClick={() => handleSelectTemplate(tpl)}
@@ -741,16 +928,21 @@ export const SocialStudioWorkspace: React.FC = () => {
                         : 'border-white/10 bg-[#191A1D] hover:border-white/20 hover:bg-[#191A1D]/80'
                     }`}
                   >
-                    <div className="w-full h-24 rounded-lg overflow-hidden bg-black/50 border border-white/10 mb-2 relative">
+                    <div className={`w-full ${tpl.format === '9:16' ? 'h-36' : 'h-24'} rounded-lg overflow-hidden bg-black/50 border border-white/10 mb-2 relative`}>
                       <img
                         src={tpl.image}
                         alt={tpl.name}
-                        className="w-full h-full object-cover group-hover:scale-105 transition-transform"
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                       />
-                      <div className="absolute top-1 right-1">
+                      <div className="absolute top-1.5 left-1.5">
+                        <span className="text-[9px] font-mono font-bold px-1.5 py-0.5 rounded bg-black/80 text-[#FF6A2A] border border-[#FF6A2A]/30">
+                          {tpl.format}
+                        </span>
+                      </div>
+                      <div className="absolute top-1.5 right-1.5">
                         <span
-                          className="w-3 h-3 rounded-full border border-white/30 block shadow"
+                          className="w-3.5 h-3.5 rounded-full border border-white/40 block shadow-md"
                           style={{ backgroundColor: tpl.accent }}
                         />
                       </div>
@@ -759,7 +951,10 @@ export const SocialStudioWorkspace: React.FC = () => {
                       <h4 className="text-xs font-bold text-[#F4F0E8] truncate group-hover:text-white">
                         {tpl.name}
                       </h4>
-                      <span className="text-[10px] text-[#A7A39B] block truncate">{tpl.category}</span>
+                      <div className="flex items-center justify-between text-[10px] text-[#A7A39B] mt-0.5">
+                        <span className="truncate">{tpl.category}</span>
+                        <span className="font-mono text-[#C8A879]">{tpl.defaultPrice}</span>
+                      </div>
                     </div>
                   </button>
                 ))}

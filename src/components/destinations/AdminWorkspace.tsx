@@ -243,12 +243,13 @@ export const AdminWorkspace: React.FC = () => {
                       <th className="py-3 px-4">Venue & Sector</th>
                       <th className="py-3 px-4">Budget Tier</th>
                       <th className="py-3 px-4 text-center">Status</th>
+                      <th className="py-3 px-4 text-center">Email Notify</th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-white/5">
                     {filtered.length === 0 ? (
                       <tr>
-                        <td colSpan={4} className="py-8 text-center text-neutral-500">
+                        <td colSpan={5} className="py-8 text-center text-neutral-500">
                           No enquiries found under {statusFilter} status.
                         </td>
                       </tr>
@@ -287,6 +288,21 @@ export const AdminWorkspace: React.FC = () => {
                             <span className="px-2 py-0.5 rounded text-[10px] font-semibold bg-white/10 text-white">
                               {enq.status}
                             </span>
+                          </td>
+                          <td className="py-3 px-4 text-center">
+                            {enq.emailStatus === 'SENT' ? (
+                              <span className="px-2 py-0.5 rounded text-[10px] font-semibold bg-emerald-500/20 text-emerald-400 border border-emerald-500/30">
+                                SENT
+                              </span>
+                            ) : enq.emailStatus === 'FAILED' ? (
+                              <span className="px-2 py-0.5 rounded text-[10px] font-semibold bg-red-500/20 text-red-400 border border-red-500/30">
+                                FAILED
+                              </span>
+                            ) : (
+                              <span className="px-2 py-0.5 rounded text-[10px] font-semibold bg-amber-500/20 text-amber-300 border border-amber-500/30">
+                                SAVED (DEMO)
+                              </span>
+                            )}
                           </td>
                         </tr>
                       ))
@@ -367,6 +383,36 @@ export const AdminWorkspace: React.FC = () => {
                       {selectedEnquiry.details}
                     </div>
                   )}
+
+                  {/* Outbound Email Dispatch Diagnostics */}
+                  <div className="p-3 bg-black/60 rounded-xl border border-white/5 space-y-1.5 text-xs">
+                    <div className="flex items-center justify-between">
+                      <span className="text-[11px] font-semibold text-neutral-400">
+                        Email Dispatch to Studio:
+                      </span>
+                      {selectedEnquiry.emailStatus === 'SENT' ? (
+                        <span className="text-[10px] font-bold text-emerald-400">
+                          DELIVERED
+                        </span>
+                      ) : selectedEnquiry.emailStatus === 'FAILED' ? (
+                        <span className="text-[10px] font-bold text-red-400">
+                          FAILED
+                        </span>
+                      ) : (
+                        <span className="text-[10px] font-bold text-amber-300">
+                          SAVED (SMTP UNCONFIGURED)
+                        </span>
+                      )}
+                    </div>
+                    <div className="text-[11px] text-neutral-300 font-mono">
+                      Target: <span className="text-amber-400">studioforkframe@gmail.com</span>
+                    </div>
+                    {selectedEnquiry.emailStatusReason && (
+                      <p className="text-[10px] text-neutral-400 leading-snug">
+                        {selectedEnquiry.emailStatusReason}
+                      </p>
+                    )}
+                  </div>
 
                   <span className="text-[10px] text-neutral-500 block font-mono">
                     Received: {new Date(selectedEnquiry.createdAt).toLocaleString()}

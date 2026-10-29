@@ -47,7 +47,7 @@ export const BriefingWorkspace: React.FC<BriefingWorkspaceProps> = ({
   const availableScopeTags = [
     'Bespoke 3D Venue Experience & Website',
     'Commission-Free Online Ordering App',
-    'Dynamic In-Venue QR Menu with Sommelier Engine',
+    'Dynamic In-Venue QR Menu with Halal & Allergen Filters',
     'Table Reservation Integration (OpenTable / Resy / SevenRooms)',
     'POS & Kitchen Printer Integration',
     'Social Studio Template Pack',
@@ -288,7 +288,7 @@ export const BriefingWorkspace: React.FC<BriefingWorkspaceProps> = ({
                 className="w-full px-3.5 py-2.5 text-sm bg-[#101113] border border-neutral-700 rounded-xl text-[#F4F0E8] focus:outline-none focus:border-[#FF6A2A] transition-colors"
               >
                 <option value="Restaurant">Fine Dining / Casual Restaurant</option>
-                <option value="Bar & Lounge">Cocktail Bar & Speakeasy</option>
+                <option value="Gourmet Lounge">Gourmet Lounge & Botanical Juice Bar</option>
                 <option value="Multi-unit Chain">Multi-unit Franchise / Chain</option>
                 <option value="Takeaway & Fast Casual">Takeaway & Fast Casual</option>
                 <option value="Cloud Kitchen">Ghost Kitchen / Delivery Brand</option>
@@ -458,16 +458,16 @@ export const BriefingWorkspace: React.FC<BriefingWorkspaceProps> = ({
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3.5">
           {[
-            { id: '01', title: 'Discovery Call', desc: 'Architecture & technical alignment', img: '/images/briefing/01_discovery_call_architecture.svg' },
-            { id: '02', title: 'Venue DNA', desc: 'Culinary questionnaire & identity capture', img: '/images/briefing/02_venue_dna_questionnaire.svg' },
-            { id: '03', title: 'POS Scoping', desc: 'Hardware & thermal printer mapping', img: '/images/briefing/03_pos_integration_scoping.svg' },
-            { id: '04', title: 'Budget & Tier', desc: 'Fixed-price contract & deliverables', img: '/images/briefing/04_budget_tier_estimation.svg' },
-            { id: '05', title: 'Milestone Plan', desc: 'Sprint timeline & weekly reviews', img: '/images/briefing/05_project_milestone_timeline.svg' },
-            { id: '06', title: 'Asset Manifest', desc: 'Photography & menu copywriting intake', img: '/images/briefing/06_creative_deliverables_manifest.svg' },
-            { id: '07', title: 'Prototyping', desc: 'Interactive 3D & responsive wireframes', img: '/images/briefing/07_rapid_prototyping_sprint.svg' },
-            { id: '08', title: 'QA & Mobile Test', desc: 'Cross-device & speed benchmarking', img: '/images/briefing/08_qa_and_device_testing.svg' },
-            { id: '09', title: 'Go-Live Launch', desc: 'Domain switch & payment verification', img: '/images/briefing/09_launch_day_go_live.svg' },
-            { id: '10', title: 'Support SLA', desc: 'Dedicated WhatsApp & emergency hotline', img: '/images/briefing/10_post_launch_support_sla.svg' }
+            { id: '01', title: 'Discovery Call', desc: 'Architecture & technical alignment', img: '/images/briefing/01_discovery_call_architecture.jpg' },
+            { id: '02', title: 'Venue DNA', desc: 'Culinary questionnaire & identity capture', img: '/images/briefing/02_venue_dna_questionnaire.jpg' },
+            { id: '03', title: 'POS Scoping', desc: 'Hardware & thermal printer mapping', img: '/images/briefing/03_pos_integration_scoping.jpg' },
+            { id: '04', title: 'Budget & Tier', desc: 'Fixed-price contract & deliverables', img: '/images/briefing/04_budget_tier_estimation.jpg' },
+            { id: '05', title: 'Milestone Plan', desc: 'Sprint timeline & weekly reviews', img: '/images/briefing/05_project_milestone_timeline.jpg' },
+            { id: '06', title: 'Asset Manifest', desc: 'Photography & menu copywriting intake', img: '/images/briefing/06_creative_deliverables_manifest.jpg' },
+            { id: '07', title: 'Prototyping', desc: 'Interactive 3D & responsive wireframes', img: '/images/briefing/07_rapid_prototyping_sprint.jpg' },
+            { id: '08', title: 'QA & Mobile Test', desc: 'Cross-device & speed benchmarking', img: '/images/briefing/08_qa_and_device_testing.jpg' },
+            { id: '09', title: 'Go-Live Launch', desc: 'Domain switch & payment verification', img: '/images/briefing/09_launch_day_go_live.jpg' },
+            { id: '10', title: 'Support SLA', desc: 'Dedicated WhatsApp & emergency hotline', img: '/images/briefing/10_post_launch_support_sla.jpg' }
           ].map((stage) => (
             <div
               key={stage.id}

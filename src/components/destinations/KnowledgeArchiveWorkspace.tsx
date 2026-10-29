@@ -24,7 +24,7 @@ const ARTICLES: KnowledgeArticle[] = [
     category: 'Digital Menus',
     readTime: '5 min read',
     date: 'October 2026',
-    image: '/images/knowledge/01_digital_menu_psychology.svg',
+    image: '/images/knowledge/01_digital_menu_psychology.jpg',
     summary: 'How visual hierarchy, optical focal points, and price anchoring on digital QR screens lift average order value by 18% without guest friction.',
     content: [
       'In traditional paper menus, guests read in a predictable Z-pattern or Golden Triangle. On mobile digital menus, reading behavior transforms into rapid vertical skimming driven by sensory imagery and high-contrast typographic anchors.',
@@ -41,7 +41,7 @@ const ARTICLES: KnowledgeArticle[] = [
     category: 'Web Engineering',
     readTime: '6 min read',
     date: 'October 2026',
-    image: '/images/knowledge/02_high_converting_restaurant_web.svg',
+    image: '/images/knowledge/02_high_converting_restaurant_web.jpg',
     summary: 'Why generic template themes cost dining venues thousands in lost reservations, and the core technical benchmarks that turn casual visitors into booked tables.',
     content: [
       'Over 72% of restaurant website visits happen on mobile devices while guests are actively on their way or deciding where to eat within the next two hours. A website that takes 4 seconds to load loses half of its potential covers before the hero image renders.',
@@ -58,7 +58,7 @@ const ARTICLES: KnowledgeArticle[] = [
     category: 'Restaurant Marketing',
     readTime: '4 min read',
     date: 'September 2026',
-    image: '/images/knowledge/03_local_seo_google_maps.svg',
+    image: '/images/knowledge/03_local_seo_google_maps.jpg',
     summary: 'A tactical blueprint for independent dining venues to capture high-intent local food searches without spending thousands on paid search ads.',
     content: [
       'When diners search "best pasta in Soho" or "private dining rooms Manchester", Google evaluates local proximity, structured schema markup, and fresh visual content.',
@@ -75,7 +75,7 @@ const ARTICLES: KnowledgeArticle[] = [
     category: 'Restaurant Marketing',
     readTime: '5 min read',
     date: 'September 2026',
-    image: '/images/knowledge/04_high_frequency_social_strategy.svg',
+    image: '/images/knowledge/04_high_frequency_social_strategy.jpg',
     summary: 'How independent kitchens can produce studio-grade social promotional drops in under 10 minutes per week using automated canvas systems.',
     content: [
       'Hospitality social media is plagued by either sporadic low-quality kitchen snapshots or expensive agency retainer burnout. The sweet spot is high-contrast, automated visual templates.',
@@ -91,7 +91,7 @@ const ARTICLES: KnowledgeArticle[] = [
     category: 'Menu Pricing',
     readTime: '7 min read',
     date: 'August 2026',
-    image: '/images/knowledge/05_inflation_prime_margin_protection.svg',
+    image: '/images/knowledge/05_inflation_prime_margin_protection.jpg',
     summary: 'Step-by-step mathematical breakdown for recalculating recipe food cost percentages and updating retail menu prices without triggering customer backlash.',
     content: [
       'Wholesale dairy, olive oil, and meat prices fluctuate rapidly. A dish originally calculated at 28% food cost can silently drift to 38% within six months if recipes are not audited continuously.',
@@ -108,7 +108,7 @@ const ARTICLES: KnowledgeArticle[] = [
     category: 'Operations',
     readTime: '5 min read',
     date: 'August 2026',
-    image: '/images/knowledge/06_zero_commission_ordering_economics.svg',
+    image: '/images/knowledge/06_zero_commission_ordering_economics.jpg',
     summary: 'How multi-unit operators and cloud kitchens replace 30% delivery commission aggregators with direct-to-consumer web apps and unified POS sync.',
     content: [
       'Surrendering 30% of takeaway revenue to third-party delivery apps has compressed restaurant net operating margins to unsustainable levels.',
@@ -119,17 +119,17 @@ const ARTICLES: KnowledgeArticle[] = [
   {
     id: 'art-07',
     number: '07',
-    slug: 'digital-wine-sommelier-ux',
-    title: 'Sommelier List Engineering: Digital Wine Cellar Walkthroughs',
+    slug: 'botanical-mocktail-beverage-ux',
+    title: 'Botanical Beverage Engineering: Digital Mocktail & Craft Infusion Lists',
     category: 'Digital Menus',
     readTime: '5 min read',
     date: 'July 2026',
-    image: '/images/knowledge/07_sommelier_wine_list_architecture.svg',
-    summary: 'How fine dining wine lists benefit from interactive vintage search, biodynamic badges, and cellar provenance storytelling on guest devices.',
+    image: '/images/knowledge/07_botanical_beverage_architecture.jpg',
+    summary: 'How modern halal-first fine dining and hospitality venues benefit from interactive mocktail menus, house shrub infusions, and artisanal beverage storytelling on guest devices.',
     content: [
-      'Physical 80-page leather wine encyclopedias intimidate casual diners and require frequent reprints when vintages exhaust.',
-      '1. Filter by Terroir & Body: Allow guests to filter wines by acidity, grape varietal, and pairing notes in two taps.',
-      '2. By-The-Glass Coravin Highlights: Feature high-margin Coravin pours with sommelier audio tasting notes to drive premium cellar trial.'
+      'Artisanal mocktails, cold-pressed botanical infusions, and fermented sparkling shrubs are the fastest-growing high-margin segment in contemporary dining.',
+      '1. Flavor Profile Filters: Allow guests to filter craft beverages by sweet, tart, herbal, or smoked botanical notes in two taps.',
+      '2. House Cordial & Foraging Stories: Highlighting cold-pressed botanicals and local provenance drives premium non-alcoholic drink sales.'
     ]
   },
   {
@@ -140,12 +140,12 @@ const ARTICLES: KnowledgeArticle[] = [
     category: 'Operations',
     readTime: '6 min read',
     date: 'July 2026',
-    image: '/images/knowledge/08_kitchen_display_ticket_efficiency.svg',
+    image: '/images/knowledge/08_back_of_house_kds_routing.jpg',
     summary: 'Preventing kitchen line chaos through automated course timing, allergy highlights, and direct thermal printer firing during high-intensity dinner service.',
     content: [
       'The barrier to direct online ordering is often back-of-house panic. When tickets print illegibly or bypass prep stations, food quality suffers.',
       '1. Color-Coded Allergen Printing: Natasha’s Law allergens must appear in inverted bold font on thermal dockets.',
-      '2. Automated Course Pacing: Synchronize starter and main firing timers between bar, cold larder, and grill stations.'
+      '2. Automated Course Pacing: Synchronize starter and main firing timers between cold larder, pastry, and grill stations.'
     ]
   },
   {
@@ -156,7 +156,7 @@ const ARTICLES: KnowledgeArticle[] = [
     category: 'Operations',
     readTime: '4 min read',
     date: 'June 2026',
-    image: '/images/knowledge/09_allergen_compliance_trust_factor.svg',
+    image: '/images/knowledge/09_allergen_compliance_natashas_law.jpg',
     summary: 'Turning statutory UK Food Standards Agency allergen disclosures into an unmistakable sign of hospitality trust and dining room professionalism.',
     content: [
       'Over 20% of UK diners now have food allergies, intolerances, or specific dietary requirements in their party. The venue that answers dietary queries fastest wins the table booking.',
@@ -172,8 +172,8 @@ const ARTICLES: KnowledgeArticle[] = [
     category: 'Operations',
     readTime: '5 min read',
     date: 'June 2026',
-    image: '/images/knowledge/10_hospitality_staff_retention_ux.svg',
-    summary: 'Reducing waitstaff stress during peak Friday evening service with intuitive handheld table order taking and instant sommelier references.',
+    image: '/images/knowledge/10_table_turn_rate_analytics.jpg',
+    summary: 'Reducing waitstaff stress during peak Friday evening service with intuitive handheld table order taking and instant recipe & allergen references.',
     content: [
       'High staff turnover in UK hospitality is exacerbated by complex, sluggish legacy EPOS systems that require weeks of training.',
       '1. Sub-10-Minute Onboarding: Mobile web interfaces with visual dish cards allow new servers to take error-free orders on day one.',
